@@ -49,7 +49,7 @@
         "Action": "EditData",
         "Target": "Data/Objects",
         "Fields": {
-            "446": {
+            "444": {
                 "Price": 325
             }
         }
