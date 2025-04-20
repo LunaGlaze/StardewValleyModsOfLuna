@@ -1,0 +1,76 @@
+{
+  "Changes": [
+    {
+        "Action": "EditData",
+        "Target": "Data/Objects",
+        "Fields": {
+            "107": {
+                "Price": 1050
+            }
+        }
+    },
+    {
+        "Action": "EditData",
+        "Target": "Data/Objects",
+        "Fields": {
+            "807": {
+                "Price": 2400
+            }
+        }
+    },
+    {
+        "Action": "EditData",
+        "Target": "Data/Objects",
+        "Fields": {
+            "305": {
+                "Price": 130
+            }
+        }
+    },
+    {
+        "Action": "EditData",
+        "Target": "Data/Objects",
+        "Fields": {
+            "308": {
+                "Price": 550
+            }
+        }
+    },
+    {
+        "Action": "EditData",
+        "Target": "Data/Objects",
+        "Fields": {
+            "446": {
+                "Price": 850
+            }
+        }
+    },
+    {
+        "Action": "EditData",
+        "Target": "Data/Objects",
+        "Fields": {
+            "446": {
+                "Price": 325
+            }
+        }
+    },
+    {
+        "Action": "EditData",
+        "Target": "Data/Objects",
+        "Fields": {
+            "442": {
+                "Price": 105
+            }
+        }
+    },
+    {
+        "Action": "EditData",
+        "Target": "Data/Objects",
+        "Fields": {
+            "307": {
+                "Price": 400
+            }
+        }
+    }
+  ]
+}

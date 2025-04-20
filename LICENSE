@@ -1,0 +1,54 @@
+本项目包括两类内容，分别适用于不同授权协议：
+
+1. 代码部分（包括 .json / .xml / .dll / .cs 等）：
+   - 授权协议：MIT 协议（具有附加条款）
+   - 原始协议文本（英文）：https://opensource.org/licenses/MIT
+   - 额外附加条款（与 MIT 协议共同生效）：
+        - 不得使用本项目作者或贡献者的名字、ID、Logo 等进行任何形式的宣传、推广或背书。
+        - 禁止将本项目代码用于任何形式的“主动加密”（如混淆、反编译保护、加壳等），必须以开放源码或可人类直接阅读形式提供（例如 .cs / 明文 .xml / 简单转译结构）。
+        - 派生项目若包含本项目代码，必须附带可浏览源码（具体释义同上）。
+
+2. 非代码资源（包括贴图、图标、音效、文案等）：
+   - 授权协议：Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC BY-NC-SA 4.0)
+   - 您可以在非商业目的下修改与分享这些内容，但必须署名，并使用相同协议发布衍生作品。
+   - CC BY-NC-SA 4.0 原文：https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+⚠️ 特别声明：
+- 本项目仅在 GitHub 与 NexusMods 平台免费公开发布。
+- 禁止在未遵守上述协议条款的情况下，擅自将本项目整体或部分上传至第三方平台（如玩家动力等），或用于整合包中。
+- 若需商业使用或特殊用途授权，请联系作者：[shiqi.luna@outlook.com]
+
+---
+
+This project contains two types of content, each under a separate license:
+
+1. Code files (.json / .xml / .dll / .cs, etc.):
+   - License: MIT with extra terms
+   - MIT: https://opensource.org/licenses/MIT
+   - Summary of additional terms:
+        - You may not use the author’s name, ID, or logo for promotional or advertising purposes.
+        - Projects incorporating this code must not encrypt, obfuscate, or otherwise hide its logic, human-readable source must be provided.
+        - Source code or directly viewable, simply translated formats must be included with any redistribution.
+
+2. Non-code assets (textures, icons, sounds, texts, etc.):
+   - License: CC BY-NC-SA 4.0
+   - You may modify and share under non-commercial purposes with proper attribution and same-license requirement.
+   - CC BY-NC-SA 4.0: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+⚠️ Important Notice:
+- This project is officially distributed only via GitHub and NexusMods.
+- Redistribution to third-party sites (e.g. 52pcgame.com, 玩家动力) or inclusion in mod packs is NOT allowed unless full compliance with the above licenses is ensured and explicit attribution is given.
+- For commercial licensing, please contact: [shiqi.luna@outlook.com]
+
+---
+
+Copyright 2025 LunaGlaze
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+You may not use the author’s name, ID, or logo for promotional or advertising purposes.
+Projects incorporating this code must not encrypt, obfuscate, or otherwise hide its logic, human-readable source must be provided. Allow it to be in a human readable form after simple decompilation.
+
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
