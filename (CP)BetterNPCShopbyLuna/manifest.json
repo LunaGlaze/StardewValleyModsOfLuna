@@ -1,0 +1,13 @@
+{
+  "Name": "(CP) Better NPC Shop by Luna",
+  "Author": "LunaGlaze",
+  "Version": "1.0.0",
+  "Description": "Set discounts based on NPC friendships, optimize the sales list, and add more products of NPC shops. | 为NPC商店设置基于好感度的折扣、优化NPC商店的出售列表，添加更多商品。",
+  "UniqueID": "LunaGlaze.BetterNPCShop",
+  "MinimumApiVersion": "4.1.10",
+  "UpdateKeys": ["Nexus:33557"],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher",
+    "MinimumVersion": "1.6.0"
+  }
+}

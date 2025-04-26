@@ -1,0 +1,297 @@
+{
+    "Changes": [
+        {
+            "LogName": "为克林特商店售价倍率添加好感度影响",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Blacksmith", "PriceModifiers"],
+            "Entries": {
+                "{{ModId}}_Pierre_PriceModifierMode_heart_low": {
+                    "Id": "{{ModId}}_Pierre_PriceModifierMode_heart_low",
+                    "Condition": "PLAYER_HEARTS Current Clint {{Required_heart_1st}},!PLAYER_HEARTS Current Clint {{Required_heart_2nd}}",
+                    "Modification": "Multiply",
+                    "Amount": "{{Price_Multiplier_1st}}",
+                    "RandomAmount": null
+                },
+                "{{ModId}}_Pierre_PriceModifierMode_heart_high": {
+                    "Id": "{{ModId}}_Pierre_PriceModifierMode_heart_high",
+                    "Condition": "PLAYER_HEARTS Current Clint {{Required_heart_2nd}},!PLAYER_HEARTS Current Clint {{Required_heart_3rd}}",
+                    "Modification": "Multiply",
+                    "Amount": "{{Price_Multiplier_2nd}}",
+                    "RandomAmount": null
+                },
+                "{{ModId}}_Pierre_PriceModifierMode_heart_highset": {
+                    "Id": "{{ModId}}_Pierre_PriceModifierMode_heart_highest",
+                    "Condition": "PLAYER_HEARTS Current Clint {{Required_heart_3rd}}",
+                    "Modification": "Multiply",
+                    "Amount": "{{Price_Multiplier_3rd}}",
+                    "RandomAmount": null
+                }
+            },
+            "When": {
+                "Clint_Shop_Discount": true
+            }
+        },
+        {
+            "LogName": "为克林特商店添加基础矿物锭",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Blacksmith", "Items"],
+            "Entries": {
+                "{{ModId}}_CopperIngot": {
+                    "Id": "{{ModId}}_CopperIngot",
+                    "ItemId": "334",
+                    "Price": 525,
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_AfterYearOneD",
+                          "Condition": "YEAR 2",
+                          "Modification": "Divide",
+                          "Amount": 21,
+                          "RandomAmount": null
+                        },
+                        {
+                          "Id": "{{ModId}}_AfterYearOneM",
+                          "Condition": "YEAR 2",
+                          "Modification": "Multiply",
+                          "Amount": 40,
+                          "RandomAmount": null
+                        }
+                    ]
+                },
+                "{{ModId}}_IronIngot": {
+                    "Id": "{{ModId}}_IronIngot",
+                    "ItemId": "335",
+                    "Price": 900,
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_AfterYearOneD",
+                          "Condition": "YEAR 2",
+                          "Modification": "Divide",
+                          "Amount": 2,
+                          "RandomAmount": null
+                        },
+                        {
+                          "Id": "{{ModId}}_AfterYearOneM",
+                          "Condition": "YEAR 2",
+                          "Modification": "Multiply",
+                          "Amount": 3,
+                          "RandomAmount": null
+                        }
+                    ]
+                },
+                "{{ModId}}_GoldIngot": {
+                    "Id": "{{ModId}}_GoldIngot",
+                    "ItemId": "336",
+                    "Price": 2150,
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_AfterYearOneD",
+                          "Condition": "YEAR 2",
+                          "Modification": "Divide",
+                          "Amount": 43,
+                          "RandomAmount": null
+                        },
+                        {
+                          "Id": "{{ModId}}_AfterYearOneM",
+                          "Condition": "YEAR 2",
+                          "Modification": "Multiply",
+                          "Amount": 80,
+                          "RandomAmount": null
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "LogName": "为克林特商店添加较为便宜的基础矿物锭",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Blacksmith", "Items"],
+            "Entries": {
+                "{{ModId}}_CopperIngotLimit": {
+                    "Id": "{{ModId}}_CopperIngotLimit",
+                    "ItemId": "334",
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_BaseIngot",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 1.2,
+                          "RandomAmount": null
+                        },
+                        {
+                          "Id": "{{ModId}}_AfterYearOne",
+                          "Condition": "YEAR 2",
+                          "Modification": "Multiply",
+                          "Amount": 2,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "AvailableStock": "50"
+                },
+                "{{ModId}}_IronIngotLimit": {
+                    "Id": "{{ModId}}_IronIngotLimit",
+                    "ItemId": "335",
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_BaseIngot",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 1.5,
+                          "RandomAmount": null
+                        },
+                        {
+                          "Id": "{{ModId}}_AfterYearOne",
+                          "Condition": "YEAR 2",
+                          "Modification": "Multiply",
+                          "Amount": 2,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "AvailableStock": "25"
+                },
+                "{{ModId}}_GoldIngotLimit": {
+                    "Id": "{{ModId}}_GoldIngotLimit",
+                    "ItemId": "336",
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_BaseIngot",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 2,
+                          "RandomAmount": null
+                        },
+                        {
+                          "Id": "{{ModId}}_AfterYearOne",
+                          "Condition": "YEAR 2",
+                          "Modification": "Multiply",
+                          "Amount": 2,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "AvailableStock": "10"
+                }
+            },
+            "MoveEntries": [
+                { "Id": "{{ModId}}_CopperIngotLimit", "BeforeId": "{{ModId}}_CopperIngot" },
+                { "Id": "{{ModId}}_IronIngotLimit", "BeforeId": "{{ModId}}_IronIngot" },
+                { "Id": "{{ModId}}_GoldIngotLimit", "BeforeId": "{{ModId}}_GoldIngot" }
+            ],
+            "When": {
+                "Clint_Shop_LimitedCheapIngots": true
+            }
+        },
+        {
+            "LogName": "为克林特商店添加铱",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Blacksmith", "Items"],
+            "Entries": {
+                "{{ModId}}_IridiumOre": {
+                    "Id": "{{ModId}}_IridiumOre",
+                    "ItemId": "386",
+                    "Condition": "PLAYER_SHIPPED_BASIC_ITEM Current 337",
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_BaseOre",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 10,
+                          "RandomAmount": null
+                        },
+                        {
+                          "Id": "{{ModId}}_AfterYearOne",
+                          "Condition": "YEAR 2",
+                          "Modification": "Multiply",
+                          "Amount": 1.6,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "AvailableStock": "50"
+                },
+                "{{ModId}}_IridiumIngots": {
+                    "Id": "{{ModId}}_IridiumIngots",
+                    "ItemId": "337",
+                    "Condition": "PLAYER_SHIPPED_BASIC_ITEM Current 337",
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_BaseOre",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 5,
+                          "RandomAmount": null
+                        },
+                        {
+                          "Id": "{{ModId}}_AfterYearOne",
+                          "Condition": "YEAR 2",
+                          "Modification": "Multiply",
+                          "Amount": 1.6,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "AvailableStock": "10"
+                }
+            },
+            "When": {
+                "Clint_Sell_Iridium": true
+            }
+        },
+        {
+            "LogName": "为克林特商店添加放射矿",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Blacksmith", "Items"],
+            "Entries": {
+                "{{ModId}}_RadioactiveOre": {
+                    "Id": "{{ModId}}_RadioactiveOre",
+                    "ItemId": "909",
+                    "Condition": "PLAYER_SHIPPED_BASIC_ITEM Current 337,PLAYER_SHIPPED_BASIC_ITEM Current 910",
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_BaseOre",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 10,
+                          "RandomAmount": null
+                        },
+                        {
+                          "Id": "{{ModId}}_AfterYearOne",
+                          "Condition": "YEAR 2",
+                          "Modification": "Multiply",
+                          "Amount": 1.6,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "AvailableStock": "50"
+                },
+                "{{ModId}}_RadioactiveIngots": {
+                    "Id": "{{ModId}}_RadioactiveIngots",
+                    "ItemId": "910",
+                    "Condition": "PLAYER_SHIPPED_BASIC_ITEM Current 337,PLAYER_SHIPPED_BASIC_ITEM Current 910",
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_BaseOre",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 5,
+                          "RandomAmount": null
+                        },
+                        {
+                          "Id": "{{ModId}}_AfterYearOne",
+                          "Condition": "YEAR 2",
+                          "Modification": "Multiply",
+                          "Amount": 1.6,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "AvailableStock": "10"
+                }
+            },
+            "When": {
+                "Clint_Sell_Iridium": true,
+                "Clint_Sell_Radioactive": true
+            }
+        }
+    ]
+}

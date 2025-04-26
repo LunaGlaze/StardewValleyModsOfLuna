@@ -1,0 +1,192 @@
+{
+    "Changes": [
+        {
+            "LogName": "为桑迪商店售价倍率添加好感度影响",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Sandy", "PriceModifiers"],
+            "Entries": {
+                "{{ModId}}_Pierre_PriceModifierMode_heart_low": {
+                    "Id": "{{ModId}}_Pierre_PriceModifierMode_heart_low",
+                    "Condition": "PLAYER_HEARTS Current Sandy {{Required_heart_1st}},!PLAYER_HEARTS Current Sandy {{Required_heart_2nd}}",
+                    "Modification": "Multiply",
+                    "Amount": "{{Price_Multiplier_1st}}",
+                    "RandomAmount": null
+                },
+                "{{ModId}}_Pierre_PriceModifierMode_heart_high": {
+                    "Id": "{{ModId}}_Pierre_PriceModifierMode_heart_high",
+                    "Condition": "PLAYER_HEARTS Current Sandy {{Required_heart_2nd}},!PLAYER_HEARTS Current Sandy {{Required_heart_3rd}}",
+                    "Modification": "Multiply",
+                    "Amount": "{{Price_Multiplier_2nd}}",
+                    "RandomAmount": null
+                },
+                "{{ModId}}_Pierre_PriceModifierMode_heart_highset": {
+                    "Id": "{{ModId}}_Pierre_PriceModifierMode_heart_highest",
+                    "Condition": "PLAYER_HEARTS Current Sandy {{Required_heart_3rd}}",
+                    "Modification": "Multiply",
+                    "Amount": "{{Price_Multiplier_3rd}}",
+                    "RandomAmount": null
+                }
+            },
+            "When": {
+                "Marnie_Shop_Discount": true
+            }
+        },
+        {
+            "LogName": "为桑迪商店添加物品",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Sandy", "Items"],
+            "Entries": {
+                "{{ModId}}_MixedSeeds": {
+                    "Id": "{{ModId}}_MixedFlowerSeeds",
+                    "ItemId": "MixedFlowerSeeds",
+                    "Price": 100,
+                    "AvailableStock": 50
+                }
+            }
+        },
+	    {
+            "LogName": "为桑迪商店添加宝石",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Sandy","Items"],
+            "Entries": {
+                "{{ModID}}_Emerald": {
+                    "Id": "{{ModID}}_Emerald",
+                    "ItemId": "(0)60",
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultSandyGem",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "AvailableStock": "6"
+                },
+                "{{ModID}}_Aquamarine": {
+                    "Id": "{{ModID}}_Aquamarine",
+                    "ItemId": "(0)62",
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultSandyGem",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "AvailableStock": "6"
+                },
+                "{{ModID}}_Ruby": {
+                    "Id": "{{ModID}}_Ruby",
+                    "ItemId": "(0)64",
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultSandyGem",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "AvailableStock": "6"
+                },
+                "{{ModID}}_Amethyst": {
+                    "Id": "{{ModID}}_Amethyst",
+                    "ItemId": "(0)66",
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultSandyGem",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "AvailableStock": "6"
+                },
+                "{{ModID}}_Topaz": {
+                    "Id": "{{ModID}}_Topaz",
+                    "ItemId": "(0)68",
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultSandyGem",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "AvailableStock": "6"
+                },
+                "{{ModID}}_Jade": {
+                    "Id": "{{ModID}}_Jade",
+                    "ItemId": "(0)70",
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultSandyGem",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "AvailableStock": "6"
+                },
+                "{{ModID}}_Diamond": {
+                    "Id": "{{ModID}}_Diamond",
+                    "ItemId": "(0)72",
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultSandyGem",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "AvailableStock": "6"
+                }
+            },
+            "When": {
+                "Sandy_Sell_Gem": true
+            }
+        },
+	    {
+            "LogName": "桑迪出售宝石每日轮换",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Sandy","Items"],
+            "Fields": {
+                "{{ModID}}_Emerald": {
+                    "Condition": "DAY_OF_WEEK 1"
+                },
+                "{{ModID}}_Aquamarine": {
+                    "Condition": "DAY_OF_WEEK 2"
+                },
+                "{{ModID}}_Ruby": {
+                    "Condition": "DAY_OF_WEEK 3"
+                },
+                "{{ModID}}_Amethyst": {
+                    "Condition": "DAY_OF_WEEK 4"
+                },
+                "{{ModID}}_Topaz": {
+                    "Condition": "DAY_OF_WEEK 5"
+                },
+                "{{ModID}}_Jade": {
+                    "Condition": "DAY_OF_WEEK 6"
+                },
+                "{{ModID}}_Diamond": {
+                    "Condition": "DAY_OF_WEEK 0"
+                }
+            },
+            "When": {
+                "Sandy_Sell_Gem": true,
+                "Sandy_Sell_Gem_Daily": true
+            }
+        }
+    ]
+}

@@ -1,0 +1,109 @@
+{
+    "Changes": [
+        {
+            "LogName": "为科布罗斯商店售价倍率添加好感度影响",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["ShadowShop", "PriceModifiers"],
+            "Entries": {
+                "{{ModId}}_Pierre_PriceModifierMode_heart_low": {
+                    "Id": "{{ModId}}_Pierre_PriceModifierMode_heart_low",
+                    "Condition": "PLAYER_HEARTS Current Krobus {{Required_heart_1st}},!PLAYER_HEARTS Current Krobus {{Required_heart_2nd}}",
+                    "Modification": "Multiply",
+                    "Amount": "{{Price_Multiplier_1st}}",
+                    "RandomAmount": null
+                },
+                "{{ModId}}_Pierre_PriceModifierMode_heart_high": {
+                    "Id": "{{ModId}}_Pierre_PriceModifierMode_heart_high",
+                    "Condition": "PLAYER_HEARTS Current Krobus {{Required_heart_2nd}},!PLAYER_HEARTS Current Krobus {{Required_heart_3rd}}",
+                    "Modification": "Multiply",
+                    "Amount": "{{Price_Multiplier_2nd}}",
+                    "RandomAmount": null
+                },
+                "{{ModId}}_Pierre_PriceModifierMode_heart_highset": {
+                    "Id": "{{ModId}}_Pierre_PriceModifierMode_heart_highest",
+                    "Condition": "PLAYER_HEARTS Current Krobus {{Required_heart_3rd}}",
+                    "Modification": "Multiply",
+                    "Amount": "{{Price_Multiplier_3rd}}",
+                    "RandomAmount": null
+                }
+            },
+            "When": {
+                "Krobus_Shop_Discount": true
+            }
+        },
+        {
+            "LogName": "科罗布斯出售突变虫巢战利品",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["ShadowShop", "Items"],
+            "Entries": {
+                "{{ModId}}_BugMeat": {
+                    "Id": "{{ModId}}_BugMeat",
+                    "ItemId": "(O)684"
+                },
+                "{{ModId}}_GreenAlgae": {
+                    "Id": "{{ModId}}_GreenAlgae",
+                    "ItemId": "(O)153"
+                },
+                "{{ModId}}_WhiteAlgae": {
+                    "Id": "{{ModId}}_WhiteAlgae",
+                    "ItemId": "(O)157"
+                },
+                "{{ModId}}_SlimeJack": {
+                    "Id": "{{ModId}}_SlimeJack",
+                    "ItemId": "(O)796",
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_Default_SlimeJack",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 2.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "AvailableStock": "1"
+                }
+            },
+            "When": {
+                "Krobus_Sell_BugLairLoot": true
+            }
+        },
+        {
+            "LogName": "科罗布斯出售垃圾",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["ShadowShop", "Items"],
+            "Entries": {
+                "{{ModId}}_Trash": {
+                    "Id": "{{ModId}}_Trash",
+                    "ItemId": "(O)168",
+                    "Price": "5"
+                },
+                "{{ModId}}_DriftWood": {
+                    "Id": "{{ModId}}_DriftWood",
+                    "ItemId": "(O)169",
+                    "Price": "5"
+                },
+                "{{ModId}}_BrokenGlasses": {
+                    "Id": "{{ModId}}_BrokenGlasses",
+                    "ItemId": "(O)170",
+                    "Price": "5"
+                },
+                "{{ModId}}_BrokenCD": {
+                    "Id": "{{ModId}}_BrokenCD",
+                    "ItemId": "(O)171",
+                    "Price": "5"
+                },
+                "{{ModId}}_SoggyNewspaper": {
+                    "Id": "{{ModId}}_SoggyNewspaper",
+                    "ItemId": "(O)172",
+                    "Price": "5"
+                }
+            },
+            "When": {
+                "Krobus_Sell_Garbage": true
+            }
+        }
+    ]
+}

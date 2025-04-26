@@ -1,0 +1,12 @@
+{
+	"Changes": [
+	    {
+            "LogName": "为玛妮商店添加自动抚摸机的信件",
+            "Action": "EditData",
+            "Target": "Data/mail",
+            "Entries": {
+                "{{ModID}}_Marnie_Sell_AutoPetter": "{{i18n:{{ModID}}_Marnie_Sell_AutoPetter_Mail.text}}[#]{{i18n:{{ModID}}_Marnie_Sell_AutoPetter_Mail.name}}"
+            }
+        }
+    ]
+}

@@ -1,0 +1,202 @@
+{
+    "Changes": [
+        {
+            "LogName": "为皮埃尔月光水母起舞商店售价倍率添加好感度影响",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Festival_DanceOfTheMoonlightJellies_Pierre", "PriceModifiers"],
+            "Entries": {
+                "{{ModId}}_Pierre_PriceModifierMode_heart_low": {
+                    "Id": "{{ModId}}_Pierre_PriceModifierMode_heart_low",
+                    "Condition": "PLAYER_HEARTS Current Pierre {{Required_heart_1st}},!PLAYER_HEARTS Current Pierre {{Required_heart_2nd}}",
+                    "Modification": "Multiply",
+                    "Amount": "{{Price_Multiplier_1st}}",
+                    "RandomAmount": null
+                },
+                "{{ModId}}_Pierre_PriceModifierMode_heart_high": {
+                    "Id": "{{ModId}}_Pierre_PriceModifierMode_heart_high",
+                    "Condition": "PLAYER_HEARTS Current Pierre {{Required_heart_2nd}},!PLAYER_HEARTS Current Pierre {{Required_heart_3rd}}",
+                    "Modification": "Multiply",
+                    "Amount": "{{Price_Multiplier_2nd}}",
+                    "RandomAmount": null
+                },
+                "{{ModId}}_Pierre_PriceModifierMode_heart_highset": {
+                    "Id": "{{ModId}}_Pierre_PriceModifierMode_heart_highest",
+                    "Condition": "PLAYER_HEARTS Current Pierre {{Required_heart_3rd}}",
+                    "Modification": "Multiply",
+                    "Amount": "{{Price_Multiplier_3rd}}",
+                    "RandomAmount": null
+                }
+            },
+            "When": {
+                "Pierre_Shop_Discount": true,
+                "Pierre_Shop_Festival_Discount": true
+            }
+        },
+        {
+            "LogName": "为皮埃尔复活节商店售价倍率添加好感度影响",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Festival_EggFestival_Pierre", "PriceModifiers"],
+            "Entries": {
+                "{{ModId}}_Pierre_PriceModifierMode_heart_low": {
+                    "Id": "{{ModId}}_Pierre_PriceModifierMode_heart_low",
+                    "Condition": "PLAYER_HEARTS Current Pierre {{Required_heart_1st}},!PLAYER_HEARTS Current Pierre {{Required_heart_2nd}}",
+                    "Modification": "Multiply",
+                    "Amount": "{{Price_Multiplier_1st}}",
+                    "RandomAmount": null
+                },
+                "{{ModId}}_Pierre_PriceModifierMode_heart_high": {
+                    "Id": "{{ModId}}_Pierre_PriceModifierMode_heart_high",
+                    "Condition": "PLAYER_HEARTS Current Pierre {{Required_heart_2nd}},!PLAYER_HEARTS Current Pierre {{Required_heart_3rd}}",
+                    "Modification": "Multiply",
+                    "Amount": "{{Price_Multiplier_2nd}}",
+                    "RandomAmount": null
+                },
+                "{{ModId}}_Pierre_PriceModifierMode_heart_highset": {
+                    "Id": "{{ModId}}_Pierre_PriceModifierMode_heart_highest",
+                    "Condition": "PLAYER_HEARTS Current Pierre {{Required_heart_3rd}}",
+                    "Modification": "Multiply",
+                    "Amount": "{{Price_Multiplier_3rd}}",
+                    "RandomAmount": null
+                }
+            },
+            "When": {
+                "Pierre_Shop_Discount": true,
+                "Pierre_Shop_Festival_Discount": true
+            }
+        },
+        {
+            "LogName": "为皮埃尔冬日星盛宴商店售价倍率添加好感度影响",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Festival_FeastOfTheWinterStar_Pierre", "PriceModifiers"],
+            "Entries": {
+                "{{ModId}}_Pierre_PriceModifierMode_heart_low": {
+                    "Id": "{{ModId}}_Pierre_PriceModifierMode_heart_low",
+                    "Condition": "PLAYER_HEARTS Current Pierre {{Required_heart_1st}},!PLAYER_HEARTS Current Pierre {{Required_heart_2nd}}",
+                    "Modification": "Multiply",
+                    "Amount": "{{Price_Multiplier_1st}}",
+                    "RandomAmount": null
+                },
+                "{{ModId}}_Pierre_PriceModifierMode_heart_high": {
+                    "Id": "{{ModId}}_Pierre_PriceModifierMode_heart_high",
+                    "Condition": "PLAYER_HEARTS Current Pierre {{Required_heart_2nd}},!PLAYER_HEARTS Current Pierre {{Required_heart_3rd}}",
+                    "Modification": "Multiply",
+                    "Amount": "{{Price_Multiplier_2nd}}",
+                    "RandomAmount": null
+                },
+                "{{ModId}}_Pierre_PriceModifierMode_heart_highset": {
+                    "Id": "{{ModId}}_Pierre_PriceModifierMode_heart_highest",
+                    "Condition": "PLAYER_HEARTS Current Pierre {{Required_heart_3rd}}",
+                    "Modification": "Multiply",
+                    "Amount": "{{Price_Multiplier_3rd}}",
+                    "RandomAmount": null
+                }
+            },
+            "When": {
+                "Pierre_Shop_Discount": true,
+                "Pierre_Shop_Festival_Discount": true
+            }
+        },
+        {
+            "LogName": "为皮埃尔花舞节商店售价倍率添加好感度影响",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Festival_FlowerDance_Pierre", "PriceModifiers"],
+            "Entries": {
+                "{{ModId}}_Pierre_PriceModifierMode_heart_low": {
+                    "Id": "{{ModId}}_Pierre_PriceModifierMode_heart_low",
+                    "Condition": "PLAYER_HEARTS Current Pierre {{Required_heart_1st}},!PLAYER_HEARTS Current Pierre {{Required_heart_2nd}}",
+                    "Modification": "Multiply",
+                    "Amount": "{{Price_Multiplier_1st}}",
+                    "RandomAmount": null
+                },
+                "{{ModId}}_Pierre_PriceModifierMode_heart_high": {
+                    "Id": "{{ModId}}_Pierre_PriceModifierMode_heart_high",
+                    "Condition": "PLAYER_HEARTS Current Pierre {{Required_heart_2nd}},!PLAYER_HEARTS Current Pierre {{Required_heart_3rd}}",
+                    "Modification": "Multiply",
+                    "Amount": "{{Price_Multiplier_2nd}}",
+                    "RandomAmount": null
+                },
+                "{{ModId}}_Pierre_PriceModifierMode_heart_highset": {
+                    "Id": "{{ModId}}_Pierre_PriceModifierMode_heart_highest",
+                    "Condition": "PLAYER_HEARTS Current Pierre {{Required_heart_3rd}}",
+                    "Modification": "Multiply",
+                    "Amount": "{{Price_Multiplier_3rd}}",
+                    "RandomAmount": null
+                }
+            },
+            "When": {
+                "Pierre_Shop_Discount": true,
+                "Pierre_Shop_Festival_Discount": true
+            }
+        },
+        {
+            "LogName": "为皮埃尔夏威夷宴会商店售价倍率添加好感度影响",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Festival_Luau_Pierre", "PriceModifiers"],
+            "Entries": {
+                "{{ModId}}_Pierre_PriceModifierMode_heart_low": {
+                    "Id": "{{ModId}}_Pierre_PriceModifierMode_heart_low",
+                    "Condition": "PLAYER_HEARTS Current Pierre {{Required_heart_1st}},!PLAYER_HEARTS Current Pierre {{Required_heart_2nd}}",
+                    "Modification": "Multiply",
+                    "Amount": "{{Price_Multiplier_1st}}",
+                    "RandomAmount": null
+                },
+                "{{ModId}}_Pierre_PriceModifierMode_heart_high": {
+                    "Id": "{{ModId}}_Pierre_PriceModifierMode_heart_high",
+                    "Condition": "PLAYER_HEARTS Current Pierre {{Required_heart_2nd}},!PLAYER_HEARTS Current Pierre {{Required_heart_3rd}}",
+                    "Modification": "Multiply",
+                    "Amount": "{{Price_Multiplier_2nd}}",
+                    "RandomAmount": null
+                },
+                "{{ModId}}_Pierre_PriceModifierMode_heart_highset": {
+                    "Id": "{{ModId}}_Pierre_PriceModifierMode_heart_highest",
+                    "Condition": "PLAYER_HEARTS Current Pierre {{Required_heart_3rd}}",
+                    "Modification": "Multiply",
+                    "Amount": "{{Price_Multiplier_3rd}}",
+                    "RandomAmount": null
+                }
+            },
+            "When": {
+                "Pierre_Shop_Discount": true,
+                "Pierre_Shop_Festival_Discount": true
+            }
+        },
+        {
+            "LogName": "为皮埃尔万灵节商店售价倍率添加好感度影响",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Festival_SpiritsEve_Pierre", "PriceModifiers"],
+            "Entries": {
+                "{{ModId}}_Pierre_PriceModifierMode_heart_low": {
+                    "Id": "{{ModId}}_Pierre_PriceModifierMode_heart_low",
+                    "Condition": "PLAYER_HEARTS Current Pierre {{Required_heart_1st}},!PLAYER_HEARTS Current Pierre {{Required_heart_2nd}}",
+                    "Modification": "Multiply",
+                    "Amount": "{{Price_Multiplier_1st}}",
+                    "RandomAmount": null
+                },
+                "{{ModId}}_Pierre_PriceModifierMode_heart_high": {
+                    "Id": "{{ModId}}_Pierre_PriceModifierMode_heart_high",
+                    "Condition": "PLAYER_HEARTS Current Pierre {{Required_heart_2nd}},!PLAYER_HEARTS Current Pierre {{Required_heart_3rd}}",
+                    "Modification": "Multiply",
+                    "Amount": "{{Price_Multiplier_2nd}}",
+                    "RandomAmount": null
+                },
+                "{{ModId}}_Pierre_PriceModifierMode_heart_highset": {
+                    "Id": "{{ModId}}_Pierre_PriceModifierMode_heart_highest",
+                    "Condition": "PLAYER_HEARTS Current Pierre {{Required_heart_3rd}}",
+                    "Modification": "Multiply",
+                    "Amount": "{{Price_Multiplier_3rd}}",
+                    "RandomAmount": null
+                }
+            },
+            "When": {
+                "Pierre_Shop_Discount": true,
+                "Pierre_Shop_Festival_Discount": true
+            }
+        }
+    ]
+}

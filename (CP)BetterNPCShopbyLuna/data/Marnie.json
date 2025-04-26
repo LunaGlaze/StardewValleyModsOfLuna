@@ -1,0 +1,349 @@
+{
+	"Changes": [
+        {
+            "LogName": "为玛妮商店售价倍率添加好感度影响",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["AnimalShop", "PriceModifiers"],
+            "Entries": {
+                "{{ModId}}_Pierre_PriceModifierMode_heart_low": {
+                    "Id": "{{ModId}}_Pierre_PriceModifierMode_heart_low",
+                    "Condition": "PLAYER_HEARTS Current Marnie {{Required_heart_1st}},!PLAYER_HEARTS Current Marnie {{Required_heart_2nd}}",
+                    "Modification": "Multiply",
+                    "Amount": "{{Price_Multiplier_1st}}",
+                    "RandomAmount": null
+                },
+                "{{ModId}}_Pierre_PriceModifierMode_heart_high": {
+                    "Id": "{{ModId}}_Pierre_PriceModifierMode_heart_high",
+                    "Condition": "PLAYER_HEARTS Current Marnie {{Required_heart_2nd}},!PLAYER_HEARTS Current Marnie {{Required_heart_3rd}}",
+                    "Modification": "Multiply",
+                    "Amount": "{{Price_Multiplier_2nd}}",
+                    "RandomAmount": null
+                },
+                "{{ModId}}_Pierre_PriceModifierMode_heart_highset": {
+                    "Id": "{{ModId}}_Pierre_PriceModifierMode_heart_highest",
+                    "Condition": "PLAYER_HEARTS Current Marnie {{Required_heart_3rd}}",
+                    "Modification": "Multiply",
+                    "Amount": "{{Price_Multiplier_3rd}}",
+                    "RandomAmount": null
+                }
+            },
+            "When": {
+                "Marnie_Shop_Discount": true
+            }
+        },
+	    {
+            "LogName": "为玛妮商店添加基础动物产物",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["AnimalShop","Items"],
+            "Entries": {
+                "{{ModID}}_Egg": {
+                    "Id": "{{ModID}}_Egg",
+                    "ItemId": "(0)176"
+                },
+                "{{ModID}}_BrownEgg": {
+                    "Id": "{{ModID}}_BrownEgg",
+                    "ItemId": "(0)180"
+                },
+                "{{ModID}}_Milk": {
+                    "Id": "{{ModID}}_Milk",
+                    "ItemId": "(0)184"
+                },
+                "{{ModID}}_GoatMilk": {
+                    "Id": "{{ModID}}_GoatMilk",
+                    "ItemId": "(0)436"
+                },
+                "{{ModID}}_DuckEgg": {
+                    "Id": "{{ModID}}_DuckEgg",
+                    "ItemId": "(0)442"
+                },
+                "{{ModID}}_Wool": {
+                    "Id": "{{ModID}}_Wool",
+                    "ItemId": "440"
+                }
+            }	
+        },
+	    {
+            "LogName": "为玛妮商店添加更多动物产物",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["AnimalShop","Items"],
+            "Entries": {
+                "{{ModID}}_LargeEgg": {
+                    "Id": "{{ModID}}_LargeEgg",
+                    "ItemId": "(0)174"
+                },
+                "{{ModID}}_LargeBrownEgg": {
+                    "Id": "{{ModID}}_LargeBrownEgg",
+                    "ItemId": "(0)182"
+                },
+                "{{ModID}}_LargeMilk": {
+                    "Id": "{{ModID}}_LargeMilk",
+                    "ItemId": "(0)186"
+                },
+                "{{ModID}}_LargeGoatMilk": {
+                    "Id": "{{ModID}}_LargeGoatMilk",
+                    "ItemId": "(0)438"
+                },
+                "{{ModID}}_DuckFeather": {
+                    "Id": "{{ModID}}_DuckFeather",
+                    "ItemId": "(0)444"
+                },	
+                "{{ModID}}_RabbitFoot": {
+                    "Id": "{{ModID}}_RabbitFoot",
+                    "ItemId": "(0)446"
+                }
+            },
+            "When": {
+                "Marnie_Sell_MoreAnimalProducts": true
+            }
+        },
+	    {
+            "LogName": "玛妮出售更多动物产品需要解锁温室",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["AnimalShop","Items"],
+            "Fields": {
+                "{{ModID}}_LargeEgg": {
+                    "Condition" : "PLAYER_HAS_MAIL Host ccPantry"
+                },
+                "{{ModID}}_LargeBrownEgg": {
+                    "Condition" : "PLAYER_HAS_MAIL Host ccPantry"
+                },
+                "{{ModID}}_LargeMilk": {
+                    "Condition" : "PLAYER_HAS_MAIL Host ccPantry"
+                },
+                "{{ModID}}_LargeGoatMilk": {
+                    "Condition" : "PLAYER_HAS_MAIL Host ccPantry"
+                },
+                "{{ModID}}_DuckFeather": {
+                    "Condition" : "PLAYER_HAS_MAIL Host ccPantry"
+                },	
+                "{{ModID}}_RabbitFoot": {
+                    "Condition" : "PLAYER_HAS_MAIL Host ccPantry"
+                }
+            },
+            "When": {
+                "Marnie_Sell_MoreAnimalProducts": true,
+                "Marnie_MoreAnimalProducts_ccPantry": true
+            }
+        },
+	    {
+            "LogName": "为玛妮商店添加松露",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["AnimalShop","Items"],
+            "Entries": {
+                "{{ModID}}_Truffle": {
+                    "Id": "{{ModID}}_Truffle",
+                    "ItemId": "(0)430"
+                }
+            },
+            "When": {
+                "Marnie_Sell_Truffle": true
+            }
+        },
+	    {
+            "LogName": "玛妮出售松露需要解锁温室",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["AnimalShop","Items"],
+            "Fields": {
+                "{{ModID}}_Truffle": {
+                    "Condition" : "PLAYER_HAS_MAIL Host ccPantry"
+                }
+            },
+            "When": {
+                "Marnie_Sell_Truffle": true,
+                "Marnie_MoreAnimalProducts_ccPantry": true
+            }
+        },
+	    {
+            "LogName": "为玛妮商店添加动物制品",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["AnimalShop","Items"],
+            "Entries": {
+                "{{ModID}}_Cheese": {
+                    "Id": "{{ModID}}_Cheese",
+                    "ItemId": "424",
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultAnimalShop",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 1.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "AvailableStock": "50"
+                },
+                "{{ModID}}_GoatCheese": {
+                    "Id": "{{ModID}}_GoatCheese",
+                    "ItemId": "(0)426",
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultAnimalShop",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 1.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "AvailableStock": "50"
+                },
+                "{{ModID}}_Mayonnaise": {
+                    "Id": "{{ModID}}_Mayonnaise",
+                    "ItemId": "(0)306",
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultAnimalShop",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 1.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "AvailableStock": "50"
+                },
+                "{{ModID}}_DuckMayonnaise": {
+                    "Id": "{{ModID}}_DuckMayonnaise",
+                    "ItemId": "(0)307",
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultAnimalShop",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 1.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "AvailableStock": "50"
+                }
+            },
+            "When": {
+                "Marnie_Sell_AnimalArtisanGood": true
+            }
+        },
+	    {
+            "LogName": "玛妮出售动物制品需要解锁温室",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["AnimalShop","Items"],
+            "Fields": {
+                "{{ModID}}_Cheese": {
+                    "Condition" : "PLAYER_HAS_MAIL Host ccPantry"
+                },
+                "{{ModID}}_GoatCheese": {
+                    "Condition" : "PLAYER_HAS_MAIL Host ccPantry"
+                },
+                "{{ModID}}_Mayonnaise": {
+                    "Condition" : "PLAYER_HAS_MAIL Host ccPantry"
+                },
+                "{{ModID}}_DuckMayonnaise": {
+                    "Condition" : "PLAYER_HAS_MAIL Host ccPantry"
+                }
+            },
+            "When": {
+                "Marnie_Sell_AnimalArtisanGood": true,
+                "Marnie_Sell_AnimalArtisanGood_ccPantry": true
+            }
+        },
+	    {
+            "LogName": "为玛妮商店添加松露油",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["AnimalShop","Items"],
+            "Entries": {
+                "{{ModID}}_TruffleOil": {
+                    "Id": "{{ModID}}_TruffleOil",
+                    "ItemId": "(0)432",
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultAnimalShop",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 1.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "AvailableStock": "25"
+                }
+            },
+            "When": {
+                "Marnie_Sell_Truffle": true,
+                "Marnie_Sell_AnimalArtisanGood": true
+            }
+        },
+	    {
+            "LogName": "玛妮出售松露油需要解锁温室",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["AnimalShop","Items"],
+            "Fields": {
+                "{{ModID}}_TruffleOil": {
+                    "Condition" : "PLAYER_HAS_MAIL Host ccPantry"
+                }
+            },
+            "When": {
+                "Marnie_Sell_Truffle": true,
+                "Marnie_Sell_AnimalArtisanGood": true,
+                "Marnie_Sell_AnimalArtisanGood_ccPantry": true
+            }
+        },
+	    {
+            "LogName": "为玛妮商店添加动物工匠机器",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["AnimalShop","Items"],
+            "Entries": {
+                "{{ModID}}_MayonnaiseMachine": {
+                    "Id": "{{ModID}}_MayonnaiseMachine",
+                    "ItemId": "(BC)24",
+                    "Price": "1500",
+                    "Condition" : "PLAYER_HAS_CRAFTING_RECIPE Current Mayonnaise Machine"
+                },
+                "{{ModID}}_CheesePress": {
+                    "Id": "{{ModID}}_CheesePress",
+                    "ItemId": "(BC)16",
+                    "Price": "1500",
+                    "Condition" : "PLAYER_HAS_CRAFTING_RECIPE Current Cheese Press"
+                },
+                "{{ModID}}_OilMaker": {
+                    "Id": "{{ModID}}_OilMaker",
+                    "ItemId": "(BC)19",
+                    "Price": "1500",
+                    "Condition" : "PLAYER_HAS_CRAFTING_RECIPE Current Oil Maker"
+                },
+                "{{ModID}}_Loom": {
+                    "Id": "{{ModID}}_Loom",
+                    "ItemId": "(BC)17",
+                    "Price": "1500",
+                    "Condition" : "PLAYER_HAS_CRAFTING_RECIPE Current Loom"
+                }
+            },
+            "When": {
+                "Marnie_Sell_AnimalArtisanEquipment": true
+            }
+        },
+	    {
+            "LogName": "为玛妮商店添加自动抚摸机",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["AnimalShop","Items"],
+            "Entries": {
+                "{{ModID}}_AutoPetter": {
+                    "Id": "{{ModID}}_AutoPetter",
+                    "ItemId": "(BC)272",
+                    "Price": "65000",
+                    "Condition" : "PLAYER_HAS_MAIL Current {{ModID}}_Marnie_Sell_AutoPetter Received",
+                    "IgnoreShopPriceModifiers": true
+                }
+            },
+            "When": {
+                "Marnie_Sell_AutoPetter": true
+            }
+        }
+	]
+}

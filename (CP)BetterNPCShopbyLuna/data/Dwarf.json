@@ -1,0 +1,105 @@
+{
+    "Changes": [
+        {
+            "LogName": "为矮人商店售价倍率添加好感度影响",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Dwarf", "PriceModifiers"],
+            "Entries": {
+                "{{ModId}}_Pierre_PriceModifierMode_heart_low": {
+                    "Id": "{{ModId}}_Pierre_PriceModifierMode_heart_low",
+                    "Condition": "PLAYER_HEARTS Current Dwarf {{Required_heart_1st}},!PLAYER_HEARTS Current Dwarf {{Required_heart_2nd}}",
+                    "Modification": "Multiply",
+                    "Amount": "{{Price_Multiplier_1st}}",
+                    "RandomAmount": null
+                },
+                "{{ModId}}_Pierre_PriceModifierMode_heart_high": {
+                    "Id": "{{ModId}}_Pierre_PriceModifierMode_heart_high",
+                    "Condition": "PLAYER_HEARTS Current Dwarf {{Required_heart_2nd}},!PLAYER_HEARTS Current Dwarf {{Required_heart_3rd}}",
+                    "Modification": "Multiply",
+                    "Amount": "{{Price_Multiplier_2nd}}",
+                    "RandomAmount": null
+                },
+                "{{ModId}}_Pierre_PriceModifierMode_heart_highset": {
+                    "Id": "{{ModId}}_Pierre_PriceModifierMode_heart_highest",
+                    "Condition": "PLAYER_HEARTS Current Dwarf {{Required_heart_3rd}}",
+                    "Modification": "Multiply",
+                    "Amount": "{{Price_Multiplier_3rd}}",
+                    "RandomAmount": null
+                }
+            },
+            "When": {
+                "Dwarf_Shop_Discount": true
+            }
+        },
+        {
+            "LogName": "矮人出售晶球",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Dwarf", "Items"],
+            "Entries": {
+                "{{ModId}}_Geode": {
+                    "Id": "{{ModId}}_Geode",
+                    "ItemId": "(O)535",
+                    "AvailableStock": 25
+                },
+                "{{ModId}}_FrozenGeode": {
+                    "Id": "{{ModId}}_FrozenGeode",
+                    "ItemId": "(O)536",
+                    "AvailableStock": 20
+                },
+                "{{ModId}}_MagmaGeode": {
+                    "Id": "{{ModId}}_MagmaGeode",
+                    "ItemId": "(O)537",
+                    "AvailableStock": 15
+                },
+                "{{ModId}}_OmniGeode": {
+                    "Id": "{{ModId}}_OmniGeode",
+                    "ItemId": "(O)749",
+                    "Price": 1000,
+                    "AvailableStock": 5
+                }
+            },
+            "When": {
+                "Dwarf_Sell_Geode": true
+            }
+        },
+        {
+            "LogName": "矮人出售石制大箱子",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Dwarf", "Items"],
+            "Entries": {
+                "{{ModId}}_BigStoneChest": {
+                    "Id": "{{ModId}}_BigStoneChest",
+                    "ItemId": "(BC)BigStoneChest",
+                    "Price": 1000,
+                    "TradeItemId": "390",
+                    "TradeItemAmount": 100
+                }
+            },
+            "When": {
+                "Dwarf_Sell_BigStoneChest": true
+            }
+        },
+        {
+            "LogName": "矮人出售自动化箱",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Dwarf", "Items"],
+            "Fields": {
+                "{{ModId}}_BigStoneChest": {
+                    "Id": "{{ModId}}_BigStoneChest",
+                    "ItemId": "(BC)BigStoneChest",
+                    "Price": 2500,
+                    "TradeItemId": "(BC)275",
+                    "TradeItemAmount": 1
+                }
+            },
+            "When": {
+                "Dwarf_Sell_BigStoneChest": true,
+				"HasMod: |contains=VegasOctober.MidGameAutomate": true
+            }
+        }
+    ]
+}

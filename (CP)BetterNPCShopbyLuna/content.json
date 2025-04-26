@@ -1,0 +1,301 @@
+{
+  "Format": "2.6.0",
+  "ConfigSchema": {
+    "Price_Multiplier_1st": {
+        "AllowValues": "0.1, 0.2, 0.25, 0.3, 0.4, 0.5, 0.6, 0.7, 0.75, 0.8, 0.9, 1, 1.1, 1.2, 1.25, 1.3, 1.4, 1.5, 1.6, 1.7, 1.75, 1.8, 1.9, 2",
+        "Default": "0.9",
+        "Section": "Multiplier"
+    },
+    "Price_Multiplier_2nd": {
+        "AllowValues": "0.1, 0.2, 0.25, 0.3, 0.4, 0.5, 0.6, 0.7, 0.75, 0.8, 0.9, 1, 1.1, 1.2, 1.25, 1.3, 1.4, 1.5, 1.6, 1.7, 1.75, 1.8, 1.9, 2",
+        "Default": "0.75",
+        "Section": "Multiplier"
+    },
+     "Price_Multiplier_3rd": {
+        "AllowValues": "0.1, 0.2, 0.25, 0.3, 0.4, 0.5, 0.6, 0.7, 0.75, 0.8, 0.9, 1, 1.1, 1.2, 1.25, 1.3, 1.4, 1.5, 1.6, 1.7, 1.75, 1.8, 1.9, 2",
+        "Default": "0.6",
+        "Section": "Multiplier"
+    },
+    "Required_heart_1st": {
+        "AllowValues": "0,1,2,3,4,5,6,7,8,9,10",
+        "Default": "3",
+        "Section": "Required Friendship Heart"
+    },
+    "Required_heart_2nd": {
+        "AllowValues": "0,1,2,3,4,5,6,7,8,9,10",
+        "Default": "6",
+        "Section": "Required Friendship Heart"
+    },
+    "Required_heart_3rd": {
+        "AllowValues": "0,1,2,3,4,5,6,7,8,9,10",
+        "Default": "10",
+        "Section": "Required Friendship Heart"
+    },
+    "Pierre_Shop_Discount": {
+        "AllowValues": "true, false",
+        "Default": true,
+        "Description": "皮埃尔商店折扣",
+        "Section": "Discount Control"
+    },
+    "Pierre_Shop_Seed_Discount": {
+        "AllowValues": "true, false",
+        "Default": true,
+        "Description": "皮埃尔商店种子折扣",
+        "Section": "Discount Control"
+    },
+    "Pierre_Shop_Festival_Discount": {
+        "AllowValues": "true, false",
+        "Default": true,
+        "Description": "皮埃尔节日商店折扣",
+        "Section": "Discount Control"
+    },
+    "Robin_Shop_Discount": {
+        "AllowValues": "true, false",
+        "Default": true,
+        "Description": "罗宾商店折扣",
+        "Section": "Discount Control"
+    },
+    "Marnie_Shop_Discount": {
+        "AllowValues": "true, false",
+        "Default": true,
+        "Description": "玛妮商店折扣",
+        "Section": "Discount Control"
+    },
+    "Clint_Shop_Discount": {
+        "AllowValues": "true, false",
+        "Default": true,
+        "Description": "克林特商店折扣",
+        "Section": "Discount Control"
+    },
+    "Harvey_Shop_Discount": {
+        "AllowValues": "true, false",
+        "Default": true,
+        "Description": "哈维商店折扣",
+        "Section": "Discount Control"
+    },
+    "Gus_Shop_Discount": {
+        "AllowValues": "true, false",
+        "Default": true,
+        "Description": "格斯商店折扣",
+        "Section": "Discount Control"
+    },
+    "Willy_Shop_Discount": {
+        "AllowValues": "true, false",
+        "Default": true,
+        "Description": "威利商店折扣",
+        "Section": "Discount Control"
+    },
+    "Sandy_Shop_Discount": {
+        "AllowValues": "true, false",
+        "Default": true,
+        "Description": "桑迪商店折扣",
+        "Section": "Discount Control"
+    },
+    "Dwarf_Shop_Discount": {
+        "AllowValues": "true, false",
+        "Default": true,
+        "Description": "矮人商店折扣",
+        "Section": "Discount Control"
+    },
+    "Krobus_Shop_Discount": {
+        "AllowValues": "true, false",
+        "Default": true,
+        "Description": "科布罗斯商店折扣",
+        "Section": "Discount Control"
+    },
+    "Pierre_Sell_SeasonSeeds": {
+        "AllowValues": "true, false",
+        "Default": true,
+        "Description": "皮埃尔出售四季采集物种子",
+        "Section": "Content Control"
+    },
+    "Pierre_Sell_TreeSap": {
+        "AllowValues": "true, false",
+        "Default": true,
+        "Description": "皮埃尔出售树液",
+        "Section": "Content Control"
+    },
+    "Pierre_Sell_AncientSeeds": {
+        "AllowValues": "true, false",
+        "Default": true,
+        "Description": "皮埃尔出售上古种子",
+        "Section": "Content Control"
+    },
+    "Pierre_Sell_RareSeeds": {
+        "AllowValues": "true, false",
+        "Default": true,
+        "Description": "皮埃尔出售稀有种子",
+        "Section": "Content Control"
+    },
+    "Pierre_Sell_Batteries": {
+        "AllowValues": "true, false",
+        "Default": false,
+        "Description": "皮埃尔出售电池",
+        "Section": "Content Control"
+    },
+    "Marnie_Sell_MoreAnimalProducts": {
+        "AllowValues": "true, false",
+        "Default": false,
+        "Description": "玛妮出售更多动物产品",
+        "Section": "Content Control"
+    },
+    "Marnie_MoreAnimalProducts_ccPantry": {
+        "AllowValues": "true, false",
+        "Default": true,
+        "Description": "玛妮出售更多动物产品需要解锁温室",
+        "Section": "Content Control"
+    },
+    "Marnie_Sell_Truffle": {
+        "AllowValues": "true, false",
+        "Default": false,
+        "Description": "玛妮出售松露",
+        "Section": "Content Control"
+    },
+    "Marnie_Sell_AnimalArtisanGood": {
+        "AllowValues": "true, false",
+        "Default": false,
+        "Description": "玛妮出售动物制品",
+        "Section": "Content Control"
+    },
+    "Marnie_Sell_AnimalArtisanGood_ccPantry": {
+        "AllowValues": "true, false",
+        "Default": true,
+        "Description": "玛妮出售动物制品需要解锁温室",
+        "Section": "Content Control"
+    },
+    "Marnie_Sell_AnimalArtisanEquipment": {
+        "AllowValues": "true, false",
+        "Default": true,
+        "Description": "玛妮出售动物制品工匠机器",
+        "Section": "Content Control"
+    },
+    "Marnie_Sell_AutoPetter": {
+        "AllowValues": "true, false",
+        "Default": false,
+        "Description": "玛妮出售自动抚摸机",
+        "Section": "Content Control"
+    },
+    "Clint_Shop_LimitedCheapIngots": {
+        "AllowValues": "true, false",
+        "Default": true,
+        "Description": "克林特限量较低价出售金属锭",
+        "Section": "Content Control"
+    },
+    "Clint_Sell_Iridium": {
+        "AllowValues": "true, false",
+        "Default": false,
+        "Description": "克林特出售铱",
+        "Section": "Content Control"
+    },
+    "Clint_Sell_Radioactive": {
+        "AllowValues": "true, false",
+        "Default": false,
+        "Description": "克林特出售放射矿",
+        "Section": "Content Control"
+    },
+    "Sandy_Sell_Gem": {
+        "AllowValues": "true, false",
+        "Default": true,
+        "Description": "桑迪出售宝石",
+        "Section": "Content Control"
+    },
+    "Sandy_Sell_Gem_Daily": {
+        "AllowValues": "true, false",
+        "Default": true,
+        "Description": "桑迪出售宝石每日轮换",
+        "Section": "Content Control"
+    },
+    "Dwarf_Sell_Geode": {
+        "AllowValues": "true, false",
+        "Default": true,
+        "Description": "矮人出售晶球",
+        "Section": "Content Control"
+    },
+    "Dwarf_Sell_BigStoneChest": {
+        "AllowValues": "true, false",
+        "Default": false,
+        "Description": "矮人出售石制大箱子",
+        "Section": "Content Control"
+    },
+    "Krobus_Sell_BugLairLoot": {
+        "AllowValues": "true, false",
+        "Default": true,
+        "Description": "科罗布斯出售突变虫巢战利品",
+        "Section": "Content Control"
+    },
+    "Krobus_Sell_Garbage": {
+        "AllowValues": "true, false",
+        "Default": false,
+        "Description": "科罗布斯出售垃圾",
+        "Section": "Content Control"
+    },
+    "VolcanoShop_Sell_Loot": {
+        "AllowValues": "true, false",
+        "Default": false,
+        "Description": "火山矮人出售火山地牢基础战利品",
+        "Section": "Content Control"
+    }
+  },
+  "Changes": [
+       {
+         "Action": "Include",
+         "FromFile": "data/Mail.json"
+       },
+       {
+         "Action": "Include",
+         "FromFile": "data/Event.json"
+       },
+       {
+         "Action": "Include",
+         "FromFile": "data/Pierre.json"
+       },
+       {
+         "Action": "Include",
+         "FromFile": "data/Robin.json"
+       },
+       {
+         "Action": "Include",
+         "FromFile": "data/Marnie.json"
+       },
+       {
+         "Action": "Include",
+         "FromFile": "data/Clint.json"
+       },
+       {
+         "Action": "Include",
+         "FromFile": "data/Robin.json"
+       },
+       {
+         "Action": "Include",
+         "FromFile": "data/Harvey.json"
+       },
+       {
+         "Action": "Include",
+         "FromFile": "data/Gus.json"
+       },
+       {
+         "Action": "Include",
+         "FromFile": "data/Willy.json"
+       },
+       {
+         "Action": "Include",
+         "FromFile": "data/Sandy.json"
+       },
+       {
+         "Action": "Include",
+         "FromFile": "data/Dwarf.json"
+       },
+       {
+         "Action": "Include",
+         "FromFile": "data/Krobus.json"
+       },
+       {
+         "Action": "Include",
+         "FromFile": "data/VanillaFestival.json"
+       },
+       {
+         "Action": "Include",
+         "FromFile": "data/VolcanoShop.json"
+       }
+    ]
+}

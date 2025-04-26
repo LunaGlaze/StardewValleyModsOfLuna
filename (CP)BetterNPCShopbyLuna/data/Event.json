@@ -1,0 +1,21 @@
+{
+	"Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_Marnie_AutoPetter_Send_Mail": {
+                    "Id": "{{ModId}}_Marnie_AutoPetter_Send_Mail",
+                    "Trigger": "DayEnding",
+                    "Condition": "IS_COMMUNITY_CENTER_COMPLETE,PLAYER_HEARTS Current Marnie 4,PLAYER_MONEY_EARNED Current 140000,!PLAYER_HAS_MAIL Current {{ModID}}_Marnie_Sell_AutoPetter",
+                    "Actions": [
+                        "AddMail Current {{ModID}}_Marnie_Sell_AutoPetter tomorrow"
+                    ]
+                }
+            },
+            "When": {
+                "Marnie_Sell_AutoPetter": true
+            }
+        }
+    ]
+}

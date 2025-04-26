@@ -1,0 +1,775 @@
+{
+    "Changes": [
+        {
+            "LogName": "为皮埃尔商店售价倍率添加好感度影响",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["SeedShop", "PriceModifiers"],
+            "Entries": {
+                "{{ModId}}_Pierre_PriceModifierMode_heart_low": {
+                    "Id": "{{ModId}}_Pierre_PriceModifierMode_heart_low",
+                    "Condition": "PLAYER_HEARTS Current Pierre {{Required_heart_1st}},!PLAYER_HEARTS Current Pierre {{Required_heart_2nd}}",
+                    "Modification": "Multiply",
+                    "Amount": "{{Price_Multiplier_1st}}",
+                    "RandomAmount": null
+                },
+                "{{ModId}}_Pierre_PriceModifierMode_heart_high": {
+                    "Id": "{{ModId}}_Pierre_PriceModifierMode_heart_high",
+                    "Condition": "PLAYER_HEARTS Current Pierre {{Required_heart_2nd}},!PLAYER_HEARTS Current Pierre {{Required_heart_3rd}}",
+                    "Modification": "Multiply",
+                    "Amount": "{{Price_Multiplier_2nd}}",
+                    "RandomAmount": null
+                },
+                "{{ModId}}_Pierre_PriceModifierMode_heart_highset": {
+                    "Id": "{{ModId}}_Pierre_PriceModifierMode_heart_highest",
+                    "Condition": "PLAYER_HEARTS Current Pierre {{Required_heart_3rd}}",
+                    "Modification": "Multiply",
+                    "Amount": "{{Price_Multiplier_3rd}}",
+                    "RandomAmount": null
+                }
+            },
+            "When": {
+                "Pierre_Shop_Discount": true
+            }
+        },
+        {
+            "LogName": "修改皮埃尔商店几种原有商品使其售价受好感度影响",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["SeedShop", "Items"],
+            "Fields": {
+                "GrassStarter": {
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "IgnoreShopPriceModifiers": false
+                },
+                "(O)419": {
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "IgnoreShopPriceModifiers": false
+                },
+                "(O)245": {
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "IgnoreShopPriceModifiers": false
+                },
+                "(O)246": {
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "IgnoreShopPriceModifiers": false
+                },
+                "(O)247": {
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "IgnoreShopPriceModifiers": false
+                },
+                "(O)423": {
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "IgnoreShopPriceModifiers": false
+                }
+            },
+            "When": {
+                "Pierre_Shop_Discount": true
+            }
+        },
+        {
+            "LogName": "修改皮埃尔商店种子售价逻辑使其受好感度影响",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["SeedShop", "Items"],
+            "Fields": {
+                "(O)472": {
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "IgnoreShopPriceModifiers": false
+                },
+                "(O)473": {
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "IgnoreShopPriceModifiers": false
+                },
+                "(O)474": {
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "IgnoreShopPriceModifiers": false
+                },
+                "(O)475": {
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "IgnoreShopPriceModifiers": false
+                },
+                "(O)427": {
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "IgnoreShopPriceModifiers": false
+                },
+                "(O)477": {
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "IgnoreShopPriceModifiers": false
+                },
+                "(O)429": {
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "IgnoreShopPriceModifiers": false
+                },
+                "(O)476": {
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "IgnoreShopPriceModifiers": false
+                },
+                "(O)273": {
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "IgnoreShopPriceModifiers": false
+                },
+                "(O)479": {
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "IgnoreShopPriceModifiers": false
+                },
+                "(O)480": {
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "IgnoreShopPriceModifiers": false
+                },
+                "(O)481": {
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "IgnoreShopPriceModifiers": false
+                },
+                "(O)482": {
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "IgnoreShopPriceModifiers": false
+                },
+                "WheatSeeds_Summer": {
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "IgnoreShopPriceModifiers": false
+                },
+                "(O)484": {
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "IgnoreShopPriceModifiers": false
+                },
+                "(O)453": {
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "IgnoreShopPriceModifiers": false
+                },
+                "(O)455": {
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "IgnoreShopPriceModifiers": false
+                },
+                "(O)302": {
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "IgnoreShopPriceModifiers": false
+                },
+                "CornSeeds_Summer": {
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "IgnoreShopPriceModifiers": false
+                },
+                "SunflowerSeeds_Summer": {
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "IgnoreShopPriceModifiers": false
+                },
+                "(O)485": {
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "IgnoreShopPriceModifiers": false
+                },
+                "(O)490": {
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "IgnoreShopPriceModifiers": false
+                },
+                "CornSeeds_Fall": {
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "IgnoreShopPriceModifiers": false
+                },
+                "(O)488": {
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "IgnoreShopPriceModifiers": false
+                },
+                "(O)491": {
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "IgnoreShopPriceModifiers": false
+                },
+                "(O)492": {
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "IgnoreShopPriceModifiers": false
+                },
+                "(O)493": {
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "IgnoreShopPriceModifiers": false
+                },
+                "WheatSeeds_Fall": {
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "IgnoreShopPriceModifiers": false
+                },
+                "SunflowerSeeds_Fall": {
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "IgnoreShopPriceModifiers": false
+                },
+                "(O)425": {
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "IgnoreShopPriceModifiers": false
+                },
+                "(O)299": {
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "IgnoreShopPriceModifiers": false
+                },
+                "(O)301": {
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "IgnoreShopPriceModifiers": false
+                },
+                "(O)489": {
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "IgnoreShopPriceModifiers": false
+                }
+            },
+            "When": {
+                "Pierre_Shop_Discount": true,
+                "Pierre_Shop_Seed_Discount": true
+            }
+        },
+        {
+            "LogName": "为皮埃尔商店添加通用新商品",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["SeedShop", "Items"],
+            "Entries": {
+                "{{ModId}}_MixedSeeds": {
+                    "Id": "{{ModId}}_MixedSeeds",
+                    "ItemId": "(O)770",
+                    "Price": 50,
+                    "IgnoreShopPriceModifiers": false,
+                    "AvailableStock": 50
+                },
+                "{{ModId}}_TreeFertilizer": {
+                    "Id": "{{ModId}}_TreeFertilizer",
+                    "ItemId": "(O)805",
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 1.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "IgnoreShopPriceModifiers": false,
+                    "AvailableStock": 5
+                }
+            },
+            "MoveEntries": [
+                { "Id": "{{ModId}}_MixedSeeds", "BeforeId": "GrassStarter" },
+                { "Id": "{{ModId}}_TreeFertilizer", "BeforeId": "(O)368" }
+            ]
+        },
+        {
+            "LogName": "皮埃尔出售四季采集物种子",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["SeedShop", "Items"],
+            "Entries": {
+                "{{ModId}}_SpringSeeds": {
+                    "Id": "{{ModId}}_SpringSeeds",
+                    "ItemId": "(0)495",
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "AvailableStock": "10",
+                    "IgnoreShopPriceModifiers": false,
+                    "Condition": "SEASON Spring"
+                },
+                "{{ModId}}_SummerSeeds": {
+                    "Id": "{{ModId}}_SummerSeeds",
+                    "ItemId": "(0)496",
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "AvailableStock": "10",
+                    "IgnoreShopPriceModifiers": false,
+                    "Condition": "SEASON Summer"
+                },
+                "{{ModId}}_FallSeeds": {
+                    "Id": "{{ModId}}_FallSeeds",
+                    "ItemId": "(0)497",
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "AvailableStock": "10",
+                    "IgnoreShopPriceModifiers": false,
+                    "Condition": "SEASON Fall"
+                },
+                "{{ModId}}_WinterSeeds": {
+                    "Id": "{{ModId}}_WinterSeeds",
+                    "ItemId": "(0)498",
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "AvailableStock": "10",
+                    "IgnoreShopPriceModifiers": false,
+                    "Condition": "SEASON Winter"
+                }
+            },
+            "MoveEntries": [
+                { "Id": "{{ModId}}_SpringSeeds", "BeforeId": "(O)472" },
+                { "Id": "{{ModId}}_SummerSeeds", "BeforeId": "(O)479" },
+                { "Id": "{{ModId}}_FallSeeds", "BeforeId": "(O)490" },
+                { "Id": "{{ModId}}_WinterSeeds", "AfterId": "(O)489" }
+            ],
+            "When": {
+                "Pierre_Sell_SeasonSeeds": true
+            }
+        },
+        {
+            "LogName": "为皮埃尔商店添加树液",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["SeedShop", "Items"],
+            "Entries": {
+                "{{ModId}}_MapleSyrup": {
+                    "Id": "MapleSyrup",
+                    "ItemId": "(0)724",
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 2,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "AvailableStock": "5"
+                },
+                "{{ModId}}_OakResin": {
+                    "Id": "OakResin",
+                    "ItemId": "(0)725",
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 2,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "AvailableStock": "5"
+                },
+                "{{ModId}}_PineTar": {
+                    "Id": "PineTar",
+                    "ItemId": "(0)726",
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 2,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "AvailableStock": "5"
+                }
+            },
+            "When": {
+                "Pierre_Sell_TreeSap": true
+            }
+        },
+        {
+            "LogName": "为皮埃尔商店添加上古种子",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["SeedShop", "Items"],
+            "Entries": {
+                "{{ModId}}_AncientSeeds": {
+                    "Id": "{{ModId}}_AncientSeeds",
+                    "ItemId": "(0)499",
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 25,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "AvailableStock": "1",
+                    "IgnoreShopPriceModifiers": false,
+                    "Condition": "PLAYER_HAS_CRAFTING_RECIPE Current Ancient Seeds,DAY_OF_WEEK 0"
+                }
+            },
+            "When": {
+                "Pierre_Sell_AncientSeeds": true
+            }
+        },
+        {
+            "LogName": "为皮埃尔商店添加稀有种子",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["SeedShop", "Items"],
+            "Entries": {
+                "{{ModId}}_RareSeeds": {
+                    "Id": "{{ModId}}_RareSeeds",
+                    "ItemId": "(0)347",
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 2,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "AvailableStock": "10",
+                    "IgnoreShopPriceModifiers": false,
+                    "Condition": "PLAYER_HAS_MAIL Current gotMissingStocklist"
+                }
+            },
+            "When": {
+                "Pierre_Sell_RareSeeds": true
+            }
+        },
+        {
+            "LogName": "为皮埃尔商店添加电池组",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["SeedShop", "Items"],
+            "Entries": {
+                "{{ModId}}_Batteries": {
+                    "Id": "{{ModId}}_Batteries",
+                    "ItemId": "(0)787",
+                    "PriceModifiers": [
+                        {
+                          "Id": "{{ModId}}_DefaultMarkup",
+                          "Condition": null,
+                          "Modification": "Multiply",
+                          "Amount": 0.5,
+                          "RandomAmount": null
+                        }
+                    ],
+                    "AvailableStock": "5",
+                    "IgnoreShopPriceModifiers": false
+                }
+            },
+            "When": {
+                "Pierre_Sell_Batteries": true
+            }
+        }
+    ]
+}

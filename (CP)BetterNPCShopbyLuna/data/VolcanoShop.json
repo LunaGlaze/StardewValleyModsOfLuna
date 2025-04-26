@@ -1,0 +1,35 @@
+{
+    "Changes": [
+        {
+            "LogName": "火山矮人出售火山地牢基础战利品",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["VolcanoShop", "Items"],
+            "Entries": {
+                "{{ModId}}_CinderShard": {
+                    "Id": "{{ModId}}_CinderShard",
+                    "MinStack": 5,
+                    "ItemId": "(O)848",
+                    "Price": 5000,
+                    "TradeItemId": "(O)82",
+                    "AvailableStock": "10"
+                },
+                "{{ModId}}_DragonTooth": {
+                    "Id": "{{ModId}}_DragonTooth",
+                    "ItemId": "(O)852",
+                    "Price": 1500,
+                    "TradeItemId": "(O)337",
+                    "AvailableStock": "5"
+                },
+                "{{ModId}}_MagmaCap": {
+                    "Id": "{{ModId}}_MagmaCap",
+                    "ItemId": "(O)851",
+                    "Price": 1400
+                }
+            },
+            "When": {
+                "VolcanoShop_Sell_Loot": true
+            }
+        }
+    ]
+}
