@@ -6,6 +6,10 @@
 
 **The Stardew Valley Mod I created is only available for free in Nexusmods and Github repositories. If you obtain my Mod through any other means, even at the cost of money, it only means that you have obtained an unsupported and insecure pirated or modified version. This warehouse does not accept any feedback from mods obtained through unofficial channels!!!**
 
+## Publish project
+- [33390](https://www.nexusmods.com/stardewvalley/mods/33390) Poultry House Product Price Adjustment | 禽舍产物价格调整
+- [33557](https://www.nexusmods.com/stardewvalley/mods/33557) Better NPC Shop by Luna | 更好的NPC商店
+
 ## License Summary
 
 **CN:**
@@ -23,7 +27,3 @@
 - Redistribution on 3rd-party platforms without compliance is forbidden  
 - Official release: GitHub & NexusMods only  
 - Contact for commercial use
-
-## Publish project
-- [33390](https://www.nexusmods.com/stardewvalley/mods/33390) Poultry House Product Price Adjustment | 禽舍产物价格调整
-- [33557](https://www.nexusmods.com/stardewvalley/mods/33557) Better NPC Shop by Luna | 更好的NPC商店
