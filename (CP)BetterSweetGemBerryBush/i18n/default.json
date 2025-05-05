@@ -1,0 +1,9 @@
+{
+  "config.Regrow_Days.name": "Regrow Days",
+  "config.Regrow_Days.description": "Days it takes for Sweet Gem Berry Bush to re-fruit.",
+  "config.SweetGemIsFruit.name": "Sweet Gem Is Fruit",
+  "config.SweetGemIsFruit.description": "Set the Category of Sweet Gem Berry to Fruit.",
+
+  "SweetGemBerryBush_Seed_name": "Sweet Gem Bush Seed",
+  "SweetGemBerryBush_Seed_description": "The product of magical grafting of Sweet Gem Berry and Ancient Fruit. It has the same growth time as the normal Sweet Gem Berry, but can regrow like a bush and be harvested repeatedly."
+}
