@@ -1,8 +1,12 @@
 {
+  "config.DisableNewCrop.name": "Disable New Crop",
+  "config.DisableNewCrop.description": "If this option is true, no new crops will be added to the game, and you can only grow vanilla Sweet Gem Berry. (This is equivalent to turning off this mod)",
   "config.Regrow_Days.name": "Regrow Days",
   "config.Regrow_Days.description": "Days it takes for Sweet Gem Berry Bush to re-fruit.",
   "config.SweetGemIsFruit.name": "Sweet Gem Is Fruit",
   "config.SweetGemIsFruit.description": "Set the Category of Sweet Gem Berry to Fruit.",
+  "config.RecipeDifficulty.name": "Recipe Difficulty",
+  "config.RecipeDifficulty.description": "Affects the difficulty of the material requirements for crafting Sweet Gem Berry Bush Seed.",
 
   "SweetGemBerryBush_Seed_name": "Sweet Gem Bush Seed",
   "SweetGemBerryBush_Seed_description": "The product of magical grafting of Sweet Gem Berry and Ancient Fruit. It has the same growth time as the normal Sweet Gem Berry, but can regrow like a bush and be harvested repeatedly."

@@ -1,14 +1,24 @@
 {
   "Format": "2.6.0",
   "ConfigSchema": {
+    "DisableNewCrop": {
+      "AllowValues": "true, false",
+      "Default": false,
+      "Description": "禁用新作物"
+    },
     "Regrow_Days": {
       "Default": "18",
       "Description": "结果天数"
     },
     "SweetGemIsFruit": {
-        "AllowValues": "true, false",
-        "Default": true,
-        "Description": "宝石甜莓是水果"
+      "AllowValues": "true, false",
+      "Default": true,
+      "Description": "宝石甜莓是水果"
+    },
+    "RecipeDifficulty": {
+      "AllowValues": "easy, normal, hard",
+      "Default": "normal",
+      "Description": "配方难度"
     }
   },
   "Changes": [
@@ -22,10 +32,7 @@
       "Target": "Data/Objects",
       "TargetField": ["417"],
       "Entries": {
-        "Category": -79,
-        "ContextTags": [
-          "fruit_item"
-        ]
+        "Category": -79
       },
       "When": {
           "SweetGemIsFruit": true
@@ -41,17 +48,46 @@
           "Description": "{{i18n:SweetGemBerryBush_Seed_description}}",
           "Type": "Seeds",
           "Category": -74,
-          "Price": 2400,
+          "Price": 600,
           "Texture": "Mods\\{{ModId}}\\SweetGemBerryBush",
           "SpriteIndex": "9"
         }
+      },
+      "When": {
+          "DisableNewCrop": false
       }
     },
     {
       "Action": "EditData",
       "Target": "Data/CraftingRecipes",
       "Entries": {
-          "LunaMod Sweet Gem Berry Bush Seed": "499 1 114 1 347 2 417 1/Home/(O){{ModId}}_SweetGemBerryBush_Seed 1/true/s Farming 10/"
+          "LunaMod Sweet Gem Berry Bush Seed": "499 1 347 1 417 1/Home/(O){{ModId}}_SweetGemBerryBush_Seed 1/false/s Farming 10/"
+      },
+      "When": {
+          "RecipeDifficulty": "easy",
+          "DisableNewCrop": false
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/CraftingRecipes",
+      "Entries": {
+          "LunaMod Sweet Gem Berry Bush Seed": "499 1 114 1 347 2 417 1/Home/(O){{ModId}}_SweetGemBerryBush_Seed 1/false/s Farming 10/"
+      },
+      "When": {
+          "RecipeDifficulty": "normal",
+          "DisableNewCrop": false
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/CraftingRecipes",
+      "Entries": {
+          "LunaMod Sweet Gem Berry Bush Seed": "499 1 114 1 347 2 417 2 MysticSyrup 3 872 1/Home/(O){{ModId}}_SweetGemBerryBush_Seed 1/false/s Farming 10/"
+      },
+      "When": {
+          "RecipeDifficulty": "hard",
+          "DisableNewCrop": false
       }
     },
     {
@@ -67,6 +103,9 @@
           "Texture": "Mods\\{{ModId}}\\SweetGemBerryBush",
           "SpriteIndex": "0"
         }
+      },
+      "When": {
+          "DisableNewCrop": false
       }
     }
   ]

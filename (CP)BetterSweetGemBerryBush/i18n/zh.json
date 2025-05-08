@@ -1,8 +1,12 @@
 {
+  "config.DisableNewCrop.name": "重生长天数",
+  "config.DisableNewCrop.description": "如果这个选项开启，将不会向游戏里添加新作物，你只能种植原版的宝石甜莓。（相当于关闭了这个mod）",
   "config.Regrow_Days.name": "重生长天数",
   "config.Regrow_Days.description": "宝石甜莓灌木重新结果需要的天数。",
   "config.SweetGemIsFruit.name": "宝石甜莓是水果",
   "config.SweetGemIsFruit.description": "将宝石甜莓的物品类型设置为水果。",
+  "config.RecipeDifficulty.name": "配方难度",
+  "config.RecipeDifficulty.description": "影响制作宝石甜莓灌木种子所需要的材料的难度。",
 
   "SweetGemBerryBush_Seed_name": "宝石甜莓灌木种子",
   "SweetGemBerryBush_Seed_description": "宝石甜莓与上古水果的魔法嫁接产物。其生长时间与普通宝石甜莓相同，但可以像灌木一样再生，并可反复采摘。"
