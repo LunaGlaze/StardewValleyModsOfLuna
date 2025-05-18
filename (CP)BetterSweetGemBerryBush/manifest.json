@@ -1,8 +1,8 @@
 {
     "Name": "(CP) Better Sweet Gem Berry Bush by Luna",
     "Author": "LunaGlaze",
-    "Version": "1.1.0",
-    "Description": "Added a new bush crop type for Sweet Gem Berry that can be harvested multiple times. Also can set Sweet Gem Berry as a fruit.|为宝石甜莓添加一种可多次收获的新灌木类作物类型，同时可以将宝石甜莓设置为水果。",
+    "Version": "1.2.0",
+    "Description": "Added a new trellis crop type for Sweet Gem Berry that can be harvested multiple times. Also can set Sweet Gem Berry as a fruit.|为宝石甜莓添加一种可多次收获的新棚架作物类型，同时可以将宝石甜莓设置为水果。",
     "MinimumApiVersion": "4.1.10",
     "UniqueID": "LunaGlaze.SweetGemBerryBushMod",
     "UpdateKeys": ["Nexus:33754"],

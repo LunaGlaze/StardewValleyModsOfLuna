@@ -1,6 +1,6 @@
 {
-  "config.DisableNewCrop.name": "重生长天数",
-  "config.DisableNewCrop.description": "如果这个选项开启，将不会向游戏里添加新作物，你只能种植原版的宝石甜莓。（相当于关闭了这个mod）",
+  "config.DisableNewCrop.name": "禁用新作物",
+  "config.DisableNewCrop.description": "如果这个选项开启，将不会向游戏里添加新作物，你只能种植原版的宝石甜莓。（相当于关闭了这个mod，但宝石甜莓是水果的修改仍然有效）",
   "config.Regrow_Days.name": "重生长天数",
   "config.Regrow_Days.description": "宝石甜莓灌木重新结果需要的天数。",
   "config.SweetGemIsFruit.name": "宝石甜莓是水果",

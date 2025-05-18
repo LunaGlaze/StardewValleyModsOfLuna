@@ -16,7 +16,7 @@
       "Description": "宝石甜莓是水果"
     },
     "RecipeDifficulty": {
-      "AllowValues": "easy, normal, hard",
+      "AllowValues": "cheat, easy, normal, hard, hell",
       "Default": "normal",
       "Description": "配方难度"
     }
@@ -61,6 +61,17 @@
       "Action": "EditData",
       "Target": "Data/CraftingRecipes",
       "Entries": {
+          "LunaMod Sweet Gem Berry Bush Seed": "347 1/Home/(O){{ModId}}_SweetGemBerryBush_Seed 1/false/s Farming 10/"
+      },
+      "When": {
+          "RecipeDifficulty": "cheat",
+          "DisableNewCrop": false
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/CraftingRecipes",
+      "Entries": {
           "LunaMod Sweet Gem Berry Bush Seed": "499 1 347 1 417 1/Home/(O){{ModId}}_SweetGemBerryBush_Seed 1/false/s Farming 10/"
       },
       "When": {
@@ -87,6 +98,17 @@
       },
       "When": {
           "RecipeDifficulty": "hard",
+          "DisableNewCrop": false
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/CraftingRecipes",
+      "Entries": {
+          "LunaMod Sweet Gem Berry Bush Seed": "499 1 114 1 347 2 417 4 872 6 MysticSyrup 8 245 100 74 1/Home/(O){{ModId}}_SweetGemBerryBush_Seed 1/false/s Farming 10/"
+      },
+      "When": {
+          "RecipeDifficulty": "hell",
           "DisableNewCrop": false
       }
     },
