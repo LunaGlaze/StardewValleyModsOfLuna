@@ -7,6 +7,8 @@
   "config.SweetGemIsFruit.description": "Set the Category of Sweet Gem Berry to Fruit.",
   "config.RecipeDifficulty.name": "Recipe Difficulty",
   "config.RecipeDifficulty.description": "Affects the difficulty of the material requirements for crafting Sweet Gem Berry Bush Seed.",
+  "config.CropPassable.name": "Crops Passable",
+  "config.CropPassable.description": "Makes Sweet Gem Berry Bush passable normally; if this is set to false, Sweet Gem Berry Bush will be treated as trellis crops similar to hops.",
 
   "SweetGemBerryBush_Seed_name": "Sweet Gem Bush Seed",
   "SweetGemBerryBush_Seed_description": "The product of magical grafting of Sweet Gem Berry and Ancient Fruit. It has the same growth time as the normal Sweet Gem Berry, but can regrow like a bush and be harvested repeatedly."

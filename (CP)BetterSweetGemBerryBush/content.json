@@ -19,6 +19,11 @@
       "AllowValues": "cheat, easy, normal, hard, hell",
       "Default": "normal",
       "Description": "配方难度"
+    },
+    "CropPassable": {
+      "AllowValues": "true, false",
+      "Default": false,
+      "Description": "新作作物可以通过；如果false将被视为与啤酒花类似的棚架作物。"
     }
   },
   "Changes": [
@@ -119,15 +124,28 @@
         "{{ModId}}_SweetGemBerryBush_Seed": {
           "Seasons": ["Fall"],
           "DaysInPhase": [2,4,6,6,6],
+          "IsRaised": true,
           "RegrowDays": "{{Regrow_Days}}",
           "HarvestItemId": "417",
-          "IsRaised": true,
           "Texture": "Mods\\{{ModId}}\\SweetGemBerryBush",
-          "SpriteIndex": "0"
+          "SpriteIndex": "0",
+          "CountForPolyculture": false
         }
       },
       "When": {
           "DisableNewCrop": false
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Crops",
+      "TargetField": ["{{ModId}}_SweetGemBerryBush_Seed"],
+      "Entries": {
+        "IsRaised": false
+      },
+      "When": {
+          "DisableNewCrop": false,
+          "CropPassable": true
       }
     }
   ]
