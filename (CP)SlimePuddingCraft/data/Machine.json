@@ -65,6 +65,20 @@
         "OutputRules"
       ],
       "Entries": {
+        "{{ModId}}_Green_Slime_Mayonnaise": {
+            "Id": "Green_Slime_Mayonnaise",
+            "Triggers": [
+              {
+                "RequiredItemId": "(O)680"
+              }
+            ],
+            "OutputItem": [
+              {
+                "ItemId": "(O){{ModId}}_Green_Slime_Mayonnaise"
+              }
+            ],
+            "MinutesUntilReady": 180
+        },
         "{{ModId}}_Blue_Slime_Mayonnaise": {
             "Id": "Blue_Slime_Mayonnaise",
             "Triggers": [
@@ -78,7 +92,7 @@
               }
             ],
             "MinutesUntilReady": 180
-          },
+        },
         "{{ModId}}_Red_Slime_Mayonnaise": {
             "Id": "Red_Slime_Mayonnaise",
             "Triggers": [
