@@ -1,0 +1,68 @@
+{
+  "Format": "2.6.0",
+  "ConfigSchema": {
+    "SlimeHutch_MachinesSpeedyBuff_156": {
+        "AllowValues": "true, false",
+        "Default": true,
+        "Description": "史莱姆屋加速史莱姆孵化器"
+    },
+    "SlimeHutch_ReadyTimeModifier_156": {
+        "AllowValues": "0.1, 0.15, 0.2, 0.25, 0.3, 0.4, 0.5, 0.6, 0.7, 0.75, 0.8, 0.85, 0.9",
+        "Default": "0.85",
+        "Description": "史莱姆孵化器速率乘数"
+    },
+    "SlimeHutch_MachinesSpeedyBuff_158": {
+        "AllowValues": "true, false",
+        "Default": true,
+        "Description": "史莱姆屋加速史莱姆压蛋器"
+    },
+    "SlimeHutch_ReadyTimeModifier_158": {
+        "AllowValues": "0.1, 0.15, 0.2, 0.25, 0.3, 0.4, 0.5, 0.6, 0.7, 0.75, 0.8, 0.85, 0.9",
+        "Default": "0.85",
+        "Description": "史莱姆压蛋器速率乘数"
+    },
+    "SlimeResearchStation_MonsterLoot": {
+        "AllowValues": "true, false",
+        "Default": true,
+        "Description": "史莱姆研究台添加随机怪物战利品商品"
+    }
+  },
+  "Changes": [
+    {
+      "Action": "Include",
+      "FromFile": "data/Objects.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "data/Buffs.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "data/BigCraftable.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "data/Furniture.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "data/Recipes.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "data/Machine.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "data/Shop.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "data/Mail.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "data/NPCGiftTastes.json"
+    }
+  ]
+}

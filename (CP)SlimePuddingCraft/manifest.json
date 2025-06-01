@@ -1,0 +1,17 @@
+{
+  "Name": "(CP) Slime Pudding Craft of Luna",
+  "Author": "LunaGlaze",
+  "Version": "1.0.0",
+  "Description": "Grow slimes, make advanced slime eggs, slime mayonnaise, and lots of jellies! | 培养史莱姆，制作更高级的史莱姆蛋、史莱姆蛋黄酱，还有很多果冻！",
+  "UniqueID": "LunaGlaze.SlimeCraftingMod",
+  "MinimumApiVersion": "4.1.10",
+  "UpdateKeys": [],
+  "Dependencies": [
+    { "UniqueID": "selph.ExtraMachineConfig", "IsRequired": true, "MinimumVersion": "1.17.0" },
+    { "UniqueID": "spacechase0.SpaceCore", "IsRequired": true }
+  ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher",
+    "MinimumVersion": "1.6.0"
+  }
+}

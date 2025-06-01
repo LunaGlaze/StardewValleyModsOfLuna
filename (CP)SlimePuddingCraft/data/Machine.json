@@ -1,0 +1,771 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": ["(BC)156","ReadyTimeModifiers"],
+      "Entries": {
+          "{{ModId}}_Buildings_SlimeHutch_SpeedyBuff": {
+            "Id": "{{ModId}}_Buildings_SlimeHutch_SpeedyBuff",
+            "Condition": "LOCATION_NAME Target \"Slime Hutch\"",
+            "Modification": "Multiply",
+            "Amount": "{{SlimeHutch_ReadyTimeModifier_156}}"
+          }
+      },
+      "When": {
+          "SlimeHutch_MachinesSpeedyBuff_156": true
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": ["(BC)158","ReadyTimeModifiers"],
+      "Entries": {
+          "{{ModId}}_Buildings_SlimeHutch_SpeedyBuff": {
+            "Id": "{{ModId}}_Buildings_SlimeHutch_SpeedyBuff",
+            "Condition": "LOCATION_NAME Target \"Slime Hutch\"",
+            "Modification": "Multiply",
+            "Amount": "{{SlimeHutch_ReadyTimeModifier_158}}"
+          }
+      },
+      "When": {
+          "SlimeHutch_MachinesSpeedyBuff_158": true
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)19",
+        "OutputRules"
+      ],
+      "Entries": {
+        "{{ModId}}_Slime_Oil": {
+            "Id": "Slime_Oil",
+            "Triggers": [
+              {
+                "RequiredItemId": "(O)766",
+                "RequiredCount": 30
+              }
+            ],
+            "OutputItem": [
+              {
+                "ItemId": "(O){{ModId}}_Slime_Oil"
+              }
+            ],
+            "MinutesUntilReady": 2600
+          }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)24",
+        "OutputRules"
+      ],
+      "Entries": {
+        "{{ModId}}_Blue_Slime_Mayonnaise": {
+            "Id": "Blue_Slime_Mayonnaise",
+            "Triggers": [
+              {
+                "RequiredItemId": "(O)413"
+              }
+            ],
+            "OutputItem": [
+              {
+                "ItemId": "(O){{ModId}}_Blue_Slime_Mayonnaise"
+              }
+            ],
+            "MinutesUntilReady": 180
+          },
+        "{{ModId}}_Red_Slime_Mayonnaise": {
+            "Id": "Red_Slime_Mayonnaise",
+            "Triggers": [
+              {
+                "RequiredItemId": "(O)437"
+              }
+            ],
+            "OutputItem": [
+              {
+                "ItemId": "(O){{ModId}}_Red_Slime_Mayonnaise"
+              }
+            ],
+            "MinutesUntilReady": 180
+          },
+        "{{ModId}}_Purple_Slime_Mayonnaise": {
+            "Id": "Purple_Slime_Mayonnaise",
+            "Triggers": [
+              {
+                "RequiredItemId": "(O)439"
+              }
+            ],
+            "OutputItem": [
+              {
+                "ItemId": "(O){{ModId}}_Purple_Slime_Mayonnaise"
+              }
+            ],
+            "MinutesUntilReady": 180
+          },
+        "{{ModId}}_Tiger_Slime_Mayonnaise": {
+            "Id": "Tiger_Slime_Mayonnaise",
+            "Triggers": [
+              {
+                "RequiredItemId": "(O)857"
+              }
+            ],
+            "OutputItem": [
+              {
+                "ItemId": "(O){{ModId}}_Tiger_Slime_Mayonnaise"
+              }
+            ],
+            "MinutesUntilReady": 180
+          }
+        }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "Entries": {
+        "(BC){{ModId}}_Slime_Reactor": {
+          "HasInput": false,
+          "HasOutput": false,
+          "InteractMethod": null,
+          "AdditionalConsumedItems": [
+            {
+              "ItemId": "(O)766",
+              "RequiredCount": 20,
+              "InvalidCountMessage": "{{i18n:Slime_Reactor_InvalidAdditionalCountMessage}}"
+            }
+          ],
+          "ReadyTimeModifiers": null,
+          "ReadyTimeModifierMode": "Stack",
+          "InvalidItemMessage": "{{i18n:Slime_Reactor_InvalidItemMessage}}",
+          "InvalidItemMessageCondition": "!ITEM_TYPE Input (BC)",
+          "InvalidCountMessage": "{{i18n:Slime_Reactor_InvalidCountMessage}}",
+          "WorkingEffects": [
+            {
+              "Id": "Default",
+              "Condition": null,
+              "Sounds": [
+                {
+                  "Id": "coin",
+                  "Delay": 0
+                },
+                {
+                  "Id": "bubbles",
+                  "Delay": 50
+                }
+              ],
+              "Interval": 100,
+              "Frames": [1],
+              "ShakeDuration": -1,
+              "TemporarySprites": [
+                {
+                  "Id": "Default",
+                  "Condition": null,
+                  "Texture": "TileSheets\\animations",
+                  "SourceRect": {
+                    "X": 256,
+                    "Y": 1856,
+                    "Width": 64,
+                    "Height": 128
+                  },
+                  "Interval": 80.0,
+                  "Frames": 6,
+                  "Loops": 999999,
+                  "PositionOffset": "0, -32",
+                  "Flicker": false,
+                  "Flip": false,
+                  "SortOffset": 0.0,
+                  "AlphaFade": 0.005,
+                  "Scale": 0.25,
+                  "ScaleChange": 0.0,
+                  "Rotation": 0.0,
+                  "RotationChange": 0.0,
+                  "Color": "Lime"
+                }
+              ]
+            }
+          ],
+          "LoadEffects": null,
+          "PreventTimePass": ["Outside"],
+          "OutputRules": [],
+          "WorkingEffectChance": 0.33,
+          "AllowLoadWhenFull": false,
+          "WobbleWhileWorking": true,
+          "LightWhileWorking": null,
+          "ShowNextIndexWhileWorking": false,
+          "ShowNextIndexWhenReady": false,
+          "AllowFairyDust": true,
+          "IsIncubator": false,
+          "OnlyCompleteOvernight": false,
+          "ClearContentsOvernightCondition": null,
+          "StatsToIncrementWhenLoaded": null,
+          "StatsToIncrementWhenHarvested": null,
+          "ExperienceGainOnHarvest": null,
+          "CustomFields": null
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": ["(BC){{ModId}}_Slime_Reactor","ReadyTimeModifiers"],
+      "Entries": {
+          "{{ModId}}_Buildings_SlimeHutch_SpeedyBuff": {
+            "Id": "{{ModId}}_Buildings_SlimeHutch_SpeedyBuff",
+            "Condition": "LOCATION_NAME Target \"Slime Hutch\"",
+            "Modification": "Multiply",
+            "Amount": 0.5
+          }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC){{ModId}}_Slime_Reactor",
+        "OutputRules"
+      ],
+      "Entries": {
+        "{{ModId}}_Petrified_Slime_Unpack": {
+          "Id": "{{ModId}}_Petrified_Slime_Unpack",
+          "Triggers": [
+            {
+              "RequiredItemId": "(O)557"
+            }
+          ],
+          "OutputItem": [
+            {
+              "Id": "(O)857",
+              "ItemId": "(O)857",
+              "Condition": "RANDOM .025"
+            },
+            {
+              "Id": "(O)439",
+              "ItemId": "(O)439",
+              "Condition": "RANDOM .05"
+            },
+            {
+              "Id": "(O)437",
+              "ItemId": "(O)437",
+              "Condition": "RANDOM .1"
+            },
+            {
+              "Id": "(O)413",
+              "ItemId": "(O)413",
+              "Condition": "RANDOM .2"
+            },
+            {
+              "Id": "(O)680",
+              "ItemId": "(O)680",
+              "Condition": "RANDOM .4"
+            },
+            {
+              "Id": "(O)766",
+              "ItemId": "(O)766",
+              "MinStack": 66,
+              "MaxStack": 766
+            }
+          ],
+          "MinutesUntilReady": 60
+        },
+        "{{ModId}}_Slime_Fish2Green": {
+          "Id": "{{ModId}}_Slime_Fish2Green",
+          "Triggers": [
+            {
+              "RequiredItemId": "(O)796"
+            }
+          ],
+          "OutputItem": [
+            {
+              "ItemId": "(O)680"
+            }
+          ],
+          "MinutesUntilReady": 120
+        },
+        "{{ModId}}_Slime_Green2Blue": {
+          "Id": "{{ModId}}_Slime_Green2Blue",
+          "Triggers": [
+            {
+              "RequiredItemId": "(O)680"
+            }
+          ],
+          "OutputItem": [
+            {
+              "ItemId": "(O)413",
+              "CustomData": {
+                "selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}_Slime_Gelatin",
+                "selph.ExtraMachineConfig.RequirementCount.1": "1",
+                "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:needex_Slime_Gelatin_RequirementInvalidMsg}}"
+              }
+            }
+          ],
+          "MinutesUntilReady": 900
+        },
+        "{{ModId}}_Slime_Blue2Red": {
+          "Id": "{{ModId}}_Slime_Blue2Red",
+          "Triggers": [
+            {
+              "RequiredItemId": "(O)413"
+            }
+          ],
+          "OutputItem": [
+            {
+              "ItemId": "(O)437",
+              "CustomData": {
+                "selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}_Slime_Gelatin",
+                "selph.ExtraMachineConfig.RequirementCount.1": "1",
+                "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:needex_Slime_Gelatin_RequirementInvalidMsg}}"
+              }
+            }
+          ],
+          "MinutesUntilReady": 1200
+        },
+        "{{ModId}}_Slime_Red2Purple": {
+          "Id": "{{ModId}}_Slime_Red2Purple",
+          "Triggers": [
+            {
+              "RequiredItemId": "(O)437"
+            }
+          ],
+          "OutputItem": [
+            {
+              "ItemId": "(O)439",
+              "CustomData": {
+                "selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}_Slime_Gelatin",
+                "selph.ExtraMachineConfig.RequirementCount.1": "1",
+                "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:needex_Slime_Gelatin_RequirementInvalidMsg}}"
+              }
+            }
+          ],
+          "MinutesUntilReady": 1500
+        },
+        "{{ModId}}_Slime_Purple2Tiger": {
+          "Id": "{{ModId}}_Slime_Purple2Tiger",
+          "Triggers": [
+            {
+              "RequiredItemId": "(O)439"
+            }
+          ],
+          "OutputItem": [
+            {
+              "ItemId": "(O)857",
+              "CustomData": {
+                "selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}_Slime_Gelatin",
+                "selph.ExtraMachineConfig.RequirementCount.1": "1",
+                "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:needex_Slime_Gelatin_RequirementInvalidMsg}}"
+              }
+            }
+          ],
+          "MinutesUntilReady": 1800
+        },
+        "{{ModId}}_Slime_Green2Gelatin": {
+          "Id": "{{ModId}}_Slime_Green2Gelatin",
+          "Triggers": [
+            {
+              "RequiredItemId": "{{ModId}}_Green_Slime_Mayonnaise"
+            }
+          ],
+          "OutputItem": [
+            {
+              "ItemId": "{{ModId}}_Slime_Gelatin",
+              "MinStack": 10,
+              "MaxStack": 10
+            }
+          ],
+          "MinutesUntilReady": 20
+        },
+        "{{ModId}}_Slime_Blue2Gelatin": {
+          "Id": "{{ModId}}_Slime_Blue2Gelatin",
+          "Triggers": [
+            {
+              "RequiredItemId": "{{ModId}}_Blue_Slime_Mayonnaise"
+            }
+          ],
+          "OutputItem": [
+            {
+              "ItemId": "{{ModId}}_Slime_Gelatin",
+              "MinStack": 25,
+              "MaxStack": 25
+            }
+          ],
+          "MinutesUntilReady": 40
+        },
+        "{{ModId}}_Slime_Red2Gelatin": {
+          "Id": "{{ModId}}_Slime_Blue2Gelatin",
+          "Triggers": [
+            {
+              "RequiredItemId": "{{ModId}}_Red_Slime_Mayonnaise"
+            }
+          ],
+          "OutputItem": [
+            {
+              "ItemId": "{{ModId}}_Slime_Gelatin",
+              "MinStack": 50,
+              "MaxStack": 50
+            }
+          ],
+          "MinutesUntilReady": 60
+        },
+        "{{ModId}}_Slime_Purple2Gelatin": {
+          "Id": "{{ModId}}_Slime_Blue2Gelatin",
+          "Triggers": [
+            {
+              "RequiredItemId": "{{ModId}}_Purple_Slime_Mayonnaise"
+            }
+          ],
+          "OutputItem": [
+            {
+              "ItemId": "{{ModId}}_Slime_Gelatin",
+              "MinStack": 80,
+              "MaxStack": 80
+            }
+          ],
+          "MinutesUntilReady": 80
+        },
+        "{{ModId}}_Slime_Tiger2Gelatin": {
+          "Id": "{{ModId}}_Slime_Blue2Gelatin",
+          "Triggers": [
+            {
+              "RequiredItemId": "{{ModId}}_Tiger_Slime_Mayonnaise"
+            }
+          ],
+          "OutputItem": [
+            {
+              "ItemId": "{{ModId}}_Slime_Gelatin",
+              "MinStack": 350,
+              "MaxStack": 350
+            }
+          ],
+          "MinutesUntilReady": 120
+        },
+        "{{ModId}}_Monster_Musk": {
+          "Id": "{{ModId}}_Monster_Musk",
+          "Triggers": [
+            {
+              "RequiredItemId": "{{ModId}}_Slime_Oil"
+            }
+          ],
+          "OutputItem": [
+            {
+              "ItemId": "(O)879",
+              "MinStack": 2,
+              "MaxStack": 4,
+              "CustomData": {
+                "selph.ExtraMachineConfig.RequirementId.1": "(O)767",
+                "selph.ExtraMachineConfig.RequirementCount.1": "5"
+              }
+            }
+          ],
+          "MinutesUntilReady": 300
+        },
+        "{{ModId}}_GreenAlgae2Slime": {
+          "Id": "{{ModId}}_GreenAlgae2Slime",
+          "Triggers": [
+            {
+              "RequiredItemId": "(O)153",
+              "RequiredCount": 5
+            }
+          ],
+          "OutputItem": [
+            {
+              "ItemId": "(0)766",
+              "MinStack": 70,
+              "MaxStack": 140,
+              "CustomData": {
+                "selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}_Slime_Oil",
+                "selph.ExtraMachineConfig.RequirementCount.1": "1"
+              }
+            }
+          ],
+          "MinutesUntilReady": 120,
+          "StackModifiers": [
+            {
+              "Id": "SilverQualityBonus",
+              "Modification": "Multiply",
+              "Amount": 1.1,
+              "Condition": "ITEM_QUALITY Input 1 1"
+            },
+            {
+              "Id": "GoldQualityBonus",
+              "Modification": "Multiply",
+              "Amount": 1.1,
+              "Condition": "ITEM_QUALITY Input 2 2"
+            },
+            {
+              "Id": "GoldQualityBonus",
+              "Modification": "Add",
+              "Amount": 1,
+              "Condition": "ITEM_QUALITY Input 2 2"
+            },
+            {
+              "Id": "GoldQualityBonus",
+              "Modification": "Multiply",
+              "Amount": 1.1,
+              "Condition": "ITEM_QUALITY Input 4"
+            },
+            {
+              "Id": "IridiumQualityBonus",
+              "Modification": "Add",
+              "Amount": 3,
+              "Condition": "ITEM_QUALITY Input 4"
+            }
+          ]
+        },
+        "{{ModId}}_WhiteAlgae2Slime": {
+          "Id": "{{ModId}}_WhiteAlgae2Slime",
+          "Triggers": [
+            {
+              "RequiredItemId": "(O)157",
+              "RequiredCount": 10
+            }
+          ],
+          "OutputItem": [
+            {
+              "ItemId": "(0)766",
+              "MinStack": 80,
+              "MaxStack": 160,
+              "CustomData": {
+                "selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}_Slime_Oil",
+                "selph.ExtraMachineConfig.RequirementCount.1": "1"
+              }
+            }
+          ],
+          "MinutesUntilReady": 120,
+          "StackModifiers": [
+            {
+              "Id": "SilverQualityBonus",
+              "Modification": "Multiply",
+              "Amount": 1.1,
+              "Condition": "ITEM_QUALITY Input 1 1"
+            },
+            {
+              "Id": "GoldQualityBonus",
+              "Modification": "Multiply",
+              "Amount": 1.1,
+              "Condition": "ITEM_QUALITY Input 2 2"
+            },
+            {
+              "Id": "GoldQualityBonus",
+              "Modification": "Add",
+              "Amount": 1,
+              "Condition": "ITEM_QUALITY Input 2 2"
+            },
+            {
+              "Id": "GoldQualityBonus",
+              "Modification": "Multiply",
+              "Amount": 1.1,
+              "Condition": "ITEM_QUALITY Input 4"
+            },
+            {
+              "Id": "IridiumQualityBonus",
+              "Modification": "Add",
+              "Amount": 3,
+              "Condition": "ITEM_QUALITY Input 4"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC){{ModId}}_Slime_Reactor",
+        "OutputRules"
+      ],
+      "Entries": {
+        "{{ModId}}_PurpleAlgae2Slime": {
+          "Id": "{{ModId}}_PurpleAlgae2Slime",
+          "Triggers": [
+            {
+              "RequiredItemId": "(O)Aimon111.WitchSwampOverhaulCP_Purple_Algae",
+              "RequiredCount": 10
+            }
+          ],
+          "OutputItem": [
+            {
+              "ItemId": "(0)766",
+              "MinStack": 100,
+              "MaxStack": 200,
+              "CustomData": {
+                "selph.ExtraMachineConfig.RequirementId.1": "(O){{ModId}}_Slime_Oil",
+                "selph.ExtraMachineConfig.RequirementCount.1": "1"
+              }
+            }
+          ],
+          "MinutesUntilReady": 120,
+          "StackModifiers": [
+            {
+              "Id": "SilverQualityBonus",
+              "Modification": "Multiply",
+              "Amount": 1.1,
+              "Condition": "ITEM_QUALITY Input 1 1"
+            },
+            {
+              "Id": "GoldQualityBonus",
+              "Modification": "Multiply",
+              "Amount": 1.1,
+              "Condition": "ITEM_QUALITY Input 2 2"
+            },
+            {
+              "Id": "GoldQualityBonus",
+              "Modification": "Add",
+              "Amount": 1,
+              "Condition": "ITEM_QUALITY Input 2 2"
+            },
+            {
+              "Id": "GoldQualityBonus",
+              "Modification": "Multiply",
+              "Amount": 1.1,
+              "Condition": "ITEM_QUALITY Input 4"
+            },
+            {
+              "Id": "IridiumQualityBonus",
+              "Modification": "Add",
+              "Amount": 3,
+              "Condition": "ITEM_QUALITY Input 4"
+            }
+          ]
+        }
+      },
+      "When": {
+          "HasMod |contains=Aimon111.WitchSwampOverhaulCP": true 
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "Entries": {
+        "(BC){{ModId}}_Slime_Pudding_Machine": {
+          "HasInput": false,
+          "HasOutput": false,
+          "InteractMethod": null,
+          "AdditionalConsumedItems": [
+            {
+              "ItemId": "{{ModId}}_Slime_Gelatin",
+              "RequiredCount": 1,
+              "InvalidCountMessage": "{{i18n:Slime_Pudding_Machine_InvalidAdditionalCountMessage}}"
+            }
+          ],
+          "ReadyTimeModifiers": null,
+          "ReadyTimeModifierMode": "Stack",
+          "WorkingEffects": [
+            {
+              "Id": "Default",
+              "Condition": null,
+              "Sounds": [
+                {
+                  "Id": "coin",
+                  "Delay": 0
+                },
+                {
+                  "Id": "bubbles",
+                  "Delay": 50
+                }
+              ],
+              "Interval": 100,
+              "Frames": [1],
+              "ShakeDuration": -1,
+              "TemporarySprites": [
+                {
+                  "Id": "Default",
+                  "Condition": null,
+                  "Texture": "TileSheets\\animations",
+                  "SourceRect": {
+                    "X": 256,
+                    "Y": 1856,
+                    "Width": 64,
+                    "Height": 128
+                  },
+                  "Interval": 80.0,
+                  "Frames": 6,
+                  "Loops": 999999,
+                  "PositionOffset": "0, -32",
+                  "Flicker": false,
+                  "Flip": false,
+                  "SortOffset": 0.0,
+                  "AlphaFade": 0.005,
+                  "Scale": 0.25,
+                  "ScaleChange": 0.0,
+                  "Rotation": 0.0,
+                  "RotationChange": 0.0,
+                  "Color": "Lime"
+                }
+              ]
+            }
+          ],
+          "LoadEffects": null,
+          "OutputRules": [],
+          "WorkingEffectChance": 0.33,
+          "AllowLoadWhenFull": false,
+          "WobbleWhileWorking": true,
+          "LightWhileWorking": null,
+          "ShowNextIndexWhileWorking": false,
+          "ShowNextIndexWhenReady": false,
+          "AllowFairyDust": true,
+          "IsIncubator": false,
+          "OnlyCompleteOvernight": false,
+          "ClearContentsOvernightCondition": null,
+          "StatsToIncrementWhenLoaded": null,
+          "StatsToIncrementWhenHarvested": null,
+          "ExperienceGainOnHarvest": null,
+          "CustomFields": null
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC){{ModId}}_Slime_Pudding_Machine",
+        "OutputRules"
+      ],
+      "Entries": {
+        "{{ModId}}_Slime_Pudding": {
+          "Id": "{{ModId}}_Slime_Pudding",
+          "Triggers": [
+            {
+              "RequiredItemId": "(O)344"
+            }
+          ],
+          "OutputItem": [
+            {
+              "CopyQuality": true,
+              "CopyColor": true,
+              "CopyPrice": true,
+              "PriceModifiers": [
+                  {
+                    "Id": "{{ModId}}_DefaultSlimePudding",
+                    "Condition": null,
+                    "Modification": "Multiply",
+                    "Amount": 1.3,
+                    "RandomAmount": null
+                  },
+                  {
+                    "Id": "{{ModId}}_DefaultSlimeGelatin",
+                    "Condition": null,
+                    "Modification": "Add",
+                    "Amount": 100,
+                    "RandomAmount": null
+                  }
+              ],
+              "PriceModifierMode": "Stack",
+              "ItemId": "{{ModId}}_Slime_Pudding",
+              "ObjectInternalName": "LunaSPC {0} Slime Pudding",
+              "ObjectDisplayName": "[LocalizedText Strings/Objects:{{ModId}}_Slime_Pudding_Flavored %PRESERVED_DISPLAY_NAME]",
+              "CustomData": {
+                "selph.ExtraMachineConfig.InheritPreserveId": "true",
+                "selph.ExtraMachineConfig.InputEdibilityMultiplier": 1.3,
+                "selph.ExtraMachineConfig.UnflavoredDisplayNameOverride": "[LocalizedText Strings/Objects:{{ModId}}_Slime_Pudding_WithoutFlavored]"
+              }
+            }
+          ],
+          "MinutesUntilReady": 60
+        }
+      }
+    }
+  ]
+}

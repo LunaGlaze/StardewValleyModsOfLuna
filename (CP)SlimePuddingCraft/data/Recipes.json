@@ -1,0 +1,32 @@
+{
+    "Changes": [
+      {
+        "LogName": "添加新打造配方",
+        "Action": "EditData",
+        "Target": "Data/CraftingRecipes",
+        "Entries": {
+            "LunaSPC Slime Reactor": "(BC)156 1 (BC)158 1 557 1 766 50/Home/(BC){{ModId}}_Slime_Reactor/true/s Combat 8/",
+            "LunaSPC Slime Pudding Machine": "(O)709 20 (O)337 2 (O)338 10 {{ModId}}_Slime_Gelatin 10/Home/(BC){{ModId}}_Slime_Pudding_Machine/true/none/"
+        }
+      },
+      {
+        "LogName": "添加新烹饪配方",
+        "Action": "EditData",
+        "Target": "Data/CookingRecipes",
+        "Entries": {
+            "LunaSPC Sweet Tangy Jelly": "{{ModId}}_Slime_Gelatin 1 296 2/2 20/{{ModId}}_Pudding_Sweet_Tangy/null",
+            "LunaSPC Black Berry Jelly": "{{ModId}}_Slime_Gelatin 1 410 2/2 20/{{ModId}}_Pudding_Black_Berry/null",
+            "LunaSPC Creme Brulee Pudding": "{{ModId}}_Slime_Gelatin 1 245 1 -6 1 -5 1/1 10/{{ModId}}_Pudding_Creme_Brulee/null",
+            "LunaSPC Spring Sakura Pudding": "{{ModId}}_Slime_Gelatin 1 638 1 -80 2/1 10/{{ModId}}_Pudding_Spring_Sakura/null",
+            "LunaSPC Moonlight Jelly Pudding": "{{ModId}}_Slime_Gelatin 1 SeaJelly 1 258 1 -4 1/1 10/{{ModId}}_Pudding_Moonlight_Jelly/null",
+            "LunaSPC Matcha Mood Pudding": "{{ModId}}_Slime_Gelatin 1 245 1 815 2/1 10/{{ModId}}_Pudding_Matcha_Mood/null",
+            "LunaSPC Tropical Style Pudding": "{{ModId}}_Slime_Gelatin 1 834 1 832 1 91 1/1 10/{{ModId}}_Pudding_Tropical_Style/null",
+            "LunaSPC Ginger Milk Pudding": "{{ModId}}_Slime_Gelatin 1 829 1 245 1 -6 1/1 10/{{ModId}}_Pudding_Ginger_Milk/null",
+            "LunaSPC Dwarf Cuisine Pudding": "{{ModId}}_Slime_Gelatin 1 CaveJelly 1 78 2/1 10/{{ModId}}_Pudding_Dwarf_Cuisine/null",
+            "LunaSPC Courage Purplethorn Pudding": "{{ModId}}_Slime_Gelatin 1 283 1 128 1 410 1/1 10/{{ModId}}_Pudding_Courage_Purplethorn/null",
+            "LunaSPC Blue Cyclone Pudding": "{{ModId}}_Slime_Gelatin 1 167 3/1 10/{{ModId}}_Pudding_Blue_Cyclone/null",
+            "LunaSPC Void Spirit Pudding": "{{ModId}}_Slime_Gelatin 1 {{ModId}}_Slime_Oil 1 879 1 308 1/1 10/{{ModId}}_Pudding_Void_Spirit/null"
+        }
+      }
+    ]
+  }

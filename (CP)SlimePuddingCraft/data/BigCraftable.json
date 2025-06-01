@@ -1,0 +1,45 @@
+{
+    "Changes": [
+      {
+        "LogName": "加载新机器贴图",
+        "Action": "Load",
+        "Target": "Mods\\{{ModId}}\\BigCraftable",
+        "FromFile": "assets/BigCraftable.png"
+      },
+      {
+        "LogName": "创建新BC机器（家具）",
+        "Action": "EditData",
+        "Target": "Data/BigCraftables",
+        "Entries": {
+          "{{ModId}}_Slime_Reactor": {
+            "Name": "LunaSPC Slime Reactor",
+            "DisplayName": "{{i18n:Slime_Reactor.name}}",
+            "Description": "{{i18n:Slime_Reactor.description}}",
+            "Texture": "Mods\\{{ModId}}\\BigCraftable",
+            "SpriteIndex": "0",
+            "Price": 0,
+            "Fragility": 0,
+            "CanBePlacedOutdoors": false,
+            "CanBePlacedIndoors": true,
+            "IsLamp": false,
+            "ContextTags": null,
+            "CustomFields": null
+          },
+          "{{ModId}}_Slime_Pudding_Machine": {
+            "Name": "LunaSPC Slime Pudding Machine",
+            "DisplayName": "{{i18n:Slime_Pudding_Machine.name}}",
+            "Description": "{{i18n:Slime_Pudding_Machine.description}}",
+            "Texture": "Mods\\{{ModId}}\\BigCraftable",
+            "SpriteIndex": "2",
+            "Price": 0,
+            "Fragility": 0,
+            "CanBePlacedOutdoors": false,
+            "CanBePlacedIndoors": true,
+            "IsLamp": false,
+            "ContextTags": null,
+            "CustomFields": null
+          }
+        }
+      }
+    ]
+  }

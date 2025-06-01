@@ -1,0 +1,25 @@
+{
+	"Changes": [
+	    {
+            "Action": "EditData",
+            "Target": "Data/mail",
+            "Entries": {
+                "{{ModId}}_Slime_Research_Station_Mail": "{{i18n:{{ModId}}_Slime_Research_Station_Mail.text}}%item id (F){{ModId}}_Slime_Research_Station 1 %%[#]{{i18n:{{ModId}}_Slime_Research_Station_Mail.name}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_Slime_Research_Station_Send_Mail": {
+                    "Id": "{{ModId}}_Slime_Research_Station_Send_Mail",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_SHIPPED_BASIC_ITEM Current {{ModId}}_Slime_Pudding,!PLAYER_HAS_MAIL Current {{ModId}}_Slime_Research_Station_Mail",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Slime_Research_Station_Mail now"
+                    ]
+                }
+            }
+        }
+    ]
+}

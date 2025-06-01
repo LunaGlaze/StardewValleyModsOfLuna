@@ -1,0 +1,23 @@
+{
+    "Changes": [
+      {
+        "Action": "EditData",
+        "Target": "Data/Furniture",
+        "Entries": {
+          "{{ModId}}_Slime_Research_Station": "LunaSPC Slime Research Station/decor/1 2/1 1/1/0/2/{{i18n:Slime_Research_Station.name}}/4/Mods\\{{ModId}}\\BigCraftable/true"
+        }
+      },
+      {
+        "Action": "EditData",
+        "Target": "spacechase0.SpaceCore/FurnitureExtensionData",
+        "Entries": {
+          "{{ModId}}_Slime_Research_Station": {
+              "TileProperties": {
+                  "0, 0": { "Buildings": { "Action": "OpenShop {{ModId}}_Slime_Research_Shop" }}
+              },
+              "DescriptionOverride": "{{i18n:Slime_Research_Station.description}}"
+          }
+        }
+      }
+    ]
+  }

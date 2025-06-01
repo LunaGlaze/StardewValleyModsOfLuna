@@ -1,0 +1,168 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Saloon", "Items"],
+            "Entries": {
+                "{{ModId}}_Slime_Pudding_Machine(Recipe)": {
+                    "Id": "{{ModId}}_Slime_Pudding_Machine(Recipe)",
+                    "ItemId": "(BC){{ModId}}_Slime_Pudding_Machine",
+                    "Price": 10000,
+                    "IsRecipe": true,
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 690006"
+                }
+            }
+        },
+        {
+          "Action": "EditData",
+          "Target": "Data/Shops",
+          "Entries": {
+              "{{ModId}}_Slime_Research_Shop": {
+                  "StackSizeVisibility": null,
+                  "OpenSound": null,
+                  "PurchaseSound": null,
+                  "PurchaseRepeatSound": null,
+                  "Owners": [
+                      {
+                        "Id": "AnyOrNone",
+                        "Name": "AnyOrNone",
+                        "Type": 2,
+                        "Dialogues": [
+                            {
+                              "Id": "Default",
+                              "Dialogue": ""
+                            }
+                        ]
+                      }
+                  ]
+              }
+          }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["{{ModId}}_Slime_Research_Shop", "Items"],
+            "Entries": {
+                "LunaSPC Sweet Tangy Pudding": {
+                    "ItemId": "{{ModId}}_Pudding_Sweet_Tangy",
+                    "IsRecipe": true,
+                    "Condition": "ANY \"YEAR 2\" \"!SEASON spring\" \"DAY_OF_MONTH 25\"",
+                    "TradeItemId": "{{ModId}}_Slime_Gelatin",
+                    "TradeItemAmount": 80
+                },
+                "LunaSPC Black Berry Pudding": {
+                    "ItemId": "{{ModId}}_Pudding_Black_Berry",
+                    "IsRecipe": true,
+                    "Condition": "PLAYER_HAS_COOKING_RECIPE Current LunaSPC Sweet Tangy Jelly,ANY \"YEAR 2\" \"SEASON winter\" \"SEASON fall,DAY_OF_MONTH 9\"",
+                    "TradeItemId": "{{ModId}}_Slime_Gelatin",
+                    "TradeItemAmount": 80
+                },
+                "LunaSPC Creme Brulee Pudding": {
+                    "ItemId": "{{ModId}}_Pudding_Creme_Brulee",
+                    "IsRecipe": true,
+                    "Condition": null,
+                    "TradeItemId": "{{ModId}}_Slime_Gelatin",
+                    "TradeItemAmount": 120
+                },
+                "LunaSPC Spring Sakura Pudding": {
+                    "ItemId": "{{ModId}}_Pudding_Spring_Sakura",
+                    "IsRecipe": true,
+                    "Condition": "PLAYER_SHIPPED_BASIC_ITEM Current 638",
+                    "TradeItemId": "{{ModId}}_Slime_Gelatin",
+                    "TradeItemAmount": 160
+                },
+                "LunaSPC Moonlight Jelly Pudding": {
+                    "ItemId": "{{ModId}}_Pudding_Moonlight_Jelly",
+                    "IsRecipe": true,
+                    "Condition": "ANY \"YEAR 2\" \"SEASON fall winter\"",
+                    "TradeItemId": "{{ModId}}_Slime_Gelatin",
+                    "TradeItemAmount": 160
+                },
+                "LunaSPC Matcha Mood Pudding": {
+                    "ItemId": "{{ModId}}_Pudding_Matcha_Mood",
+                    "IsRecipe": true,
+                    "Condition": "PLAYER_HAS_CRAFTING_RECIPE Current Tea Sapling",
+                    "TradeItemId": "{{ModId}}_Slime_Gelatin",
+                    "TradeItemAmount": 160
+                },
+                "LunaSPC Tropical Style Pudding": {
+                    "ItemId": "{{ModId}}_Pudding_Tropical_Style",
+                    "IsRecipe": true,
+                    "Condition": "PLAYER_VISITED_LOCATION Current IslandWest",
+                    "TradeItemId": "{{ModId}}_Slime_Gelatin",
+                    "TradeItemAmount": 160
+                },
+                "LunaSPC Ginger Milk Pudding": {
+                    "ItemId": "{{ModId}}_Pudding_Ginger_Milk",
+                    "IsRecipe": true,
+                    "Condition": "PLAYER_VISITED_LOCATION Current IslandNorth",
+                    "TradeItemId": "{{ModId}}_Slime_Gelatin",
+                    "TradeItemAmount": 160
+                },
+                "LunaSPC Dwarf Cuisine Pudding": {
+                    "ItemId": "{{ModId}}_Pudding_Dwarf_Cuisine",
+                    "IsRecipe": true,
+                    "Condition": "MINE_LOWEST_LEVEL_REACHED 40",
+                    "TradeItemId": "{{ModId}}_Slime_Gelatin",
+                    "TradeItemAmount": 160
+                },
+                "LunaSPC Courage Purplethorn Pudding": {
+                    "ItemId": "{{ModId}}_Pudding_Courage_Purplethorn",
+                    "IsRecipe": true,
+                    "Condition": "MINE_LOWEST_LEVEL_REACHED 20,PLAYER_HEARTS Current Abigail 4",
+                    "TradeItemId": "{{ModId}}_Slime_Gelatin",
+                    "TradeItemAmount": 160
+                },
+                "LunaSPC Blue Cyclone Pudding": {
+                    "ItemId": "{{ModId}}_Pudding_Blue_Cyclone",
+                    "IsRecipe": true,
+                    "Condition": null,
+                    "TradeItemId": "{{ModId}}_Slime_Gelatin",
+                    "TradeItemAmount": 160
+                },
+                "LunaSPC Void Spirit Pudding": {
+                    "ItemId": "{{ModId}}_Pudding_Void_Spirit",
+                    "IsRecipe": true,
+                    "Condition": "ANY \"PLAYER_HAS_COOKING_RECIPE Current LunaSPC Spring Sakura Pudding\" \"PLAYER_HAS_COOKING_RECIPE Current LunaSPC Moonlight Jelly Pudding\" \"PLAYER_HAS_COOKING_RECIPE Current LunaSPC Matcha Mood Pudding\" \"PLAYER_HAS_COOKING_RECIPE Current LunaSPC Tropical Style Pudding\" \"PLAYER_HAS_COOKING_RECIPE Current LunaSPC Ginger Milk Pudding\" \"PLAYER_HAS_COOKING_RECIPE Current LunaSPC Dwarf Cuisine Pudding\" \"PLAYER_HAS_COOKING_RECIPE Current LunaSPC Courage Purplethorn Pudding\" \"PLAYER_HAS_COOKING_RECIPE Current LunaSPC Blue Cyclone Pudding\",PLAYER_HEARTS Current Krobus 4",
+                    "TradeItemId": "{{ModId}}_Slime_Gelatin",
+                    "TradeItemAmount": 160
+                }
+            }
+        },
+        {
+          "Action": "EditData",
+          "Target": "Data/LostItemsShop",
+          "Entries": {
+              "{{ModId}}_Slime_Research_Station": {
+                "Id": "LunaSPC Slime Research Station",
+                "ItemId": "(F){{ModId}}_Slime_Research_Station",
+                "RequireMailReceived": "{{ModID}}_Slime_Research_Station_Mail",
+                "RequireEventSeen": null
+              }
+          }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["{{ModId}}_Slime_Research_Shop", "Items"],
+            "Entries": {
+                "LunaSPC SlimeResearchStation_MonsterLoot": {
+                    "ItemId": "RANDOM_ITEMS (O)",
+                    "PerItemCondition": "ANY \"ITEM_CATEGORY Target -28\" \"ITEM_ID Target 881\"",
+                    "MaxItems": 1,
+                    "MinStack": 1,
+                    "MaxStack": 150,
+                    "Condition": "PLAYER_HAS_COOKING_RECIPE Current LunaSPC Sweet Tangy Jelly,PLAYER_HAS_COOKING_RECIPE Current LunaSPC Black Berry Jelly,PLAYER_HAS_COOKING_RECIPE Current LunaSPC Creme Brulee Pudding,PLAYER_HAS_COOKING_RECIPE Current LunaSPC Spring Sakura Pudding,PLAYER_HAS_COOKING_RECIPE Current LunaSPC Moonlight Jelly Pudding,PLAYER_HAS_COOKING_RECIPE Current LunaSPC Matcha Mood Pudding,PLAYER_HAS_COOKING_RECIPE Current LunaSPC Tropical Style Pudding,PLAYER_HAS_COOKING_RECIPE Current LunaSPC Ginger Milk Pudding,PLAYER_HAS_COOKING_RECIPE Current LunaSPC Dwarf Cuisine Pudding,PLAYER_HAS_COOKING_RECIPE Current LunaSPC Courage Purplethorn Pudding,PLAYER_HAS_COOKING_RECIPE Current LunaSPC Blue Cyclone Pudding,PLAYER_HAS_COOKING_RECIPE Current LunaSPC Void Spirit Pudding",
+                    "TradeItemId": "{{ModId}}_Slime_Gelatin",
+                    "TradeItemAmount": 100,
+                    "AvailableStock": 1,
+                    "AvailableStockLimit": "Player"
+                }
+            },
+            "When": {
+                "SlimeResearchStation_MonsterLoot": true
+            }
+        }
+    ]
+}

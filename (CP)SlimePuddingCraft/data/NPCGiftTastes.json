@@ -1,0 +1,76 @@
+{
+    "Changes": [
+      {
+        "Action": "EditData",
+        "Target": "Data/NPCGiftTastes",
+        "TextOperations": [
+            {
+                "Operation": "Append",
+                "Target": [ "Entries", "Universal_Dislike" ],
+                "Value": "{{ModId}}_Pudding_Blue_Cyclone",
+                "Delimiter": " "
+            },
+            {
+                "Operation": "Append",
+                "Target": ["Fields", "Pam", "9"],
+                "Value": "{{ModId}}_Pudding_Blue_Cyclone",
+                "Delimiter": " " 
+            },
+            {
+                "Operation": "Append",
+                "Target": ["Fields", "Sam", "3"],
+                "Value": "{{ModId}}_Pudding_Blue_Cyclone",
+                "Delimiter": " " 
+            },
+            {
+                "Operation": "Append",
+                "Target": ["Fields", "Linus", "1"],
+                "Value": "{{ModId}}_Pudding_Sweet_Tangy",
+                "Delimiter": " " 
+            },
+            {
+                "Operation": "Append",
+                "Target": ["Fields", "Jas", "1"],
+                "Value": "{{ModId}}_Pudding_Spring_Sakura",
+                "Delimiter": " " 
+            },
+            {
+                "Operation": "Append",
+                "Target": ["Fields", "Willy", "1"],
+                "Value": "{{ModId}}_Pudding_Moonlight_Jelly",
+                "Delimiter": " " 
+            },
+            {
+                "Operation": "Append",
+                "Target": ["Fields", "Caroline", "1"],
+                "Value": "{{ModId}}_Pudding_Matcha_Mood",
+                "Delimiter": " " 
+            },
+            {
+                "Operation": "Append",
+                "Target": ["Fields", "Leo", "1"],
+                "Value": "{{ModId}}_Pudding_Tropical_Style",
+                "Delimiter": " " 
+            },
+            {
+                "Operation": "Append",
+                "Target": ["Fields", "Dwarf", "1"],
+                "Value": "{{ModId}}_Pudding_Dwarf_Cuisine",
+                "Delimiter": " " 
+            },
+            {
+                "Operation": "Append",
+                "Target": ["Fields", "Abigail", "1"],
+                "Value": "{{ModId}}_Pudding_Courage_Purplethorn",
+                "Delimiter": " " 
+            },
+            {
+                "Operation": "Append",
+                "Target": ["Fields", "Krobus", "1"],
+                "Value": "{{ModId}}_Pudding_Void_Spirit",
+                "Delimiter": " " 
+            }
+        ]
+      }
+    ]
+}

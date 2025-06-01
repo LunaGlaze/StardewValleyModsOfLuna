@@ -1,0 +1,517 @@
+{
+  "Changes": [
+    {
+        "Action": "EditData",
+        "Target": "Strings/Objects",
+        "Entries": {
+            "{{ModId}}_Slime_Pudding_Flavored": "{{i18n:flavored-Slime_Pudding.name}}",
+            "{{ModId}}_Slime_Pudding_WithoutFlavored": "{{i18n:Slime_Pudding.name}}"
+        }
+    },
+    {
+      "LogName": "加载史莱姆蛋黄酱贴图",
+      "Action": "Load",
+      "Target": "Mods\\{{ModId}}\\Slime_Base",
+      "FromFile": "assets/Slime_Base.png"
+    },
+    {
+      "LogName": "加载史莱姆蛋果冻系列贴图",
+      "Action": "Load",
+      "Target": "Mods\\{{ModId}}\\Slime_Jelly",
+      "FromFile": "assets/Slime_Jelly.png"
+    },
+    {
+      "LogName": "创建新物品",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_Green_Slime_Mayonnaise": {
+          "Name": "LunaSPC Green Slime Mayonnaise",
+          "DisplayName": "{{i18n:Green_Slime_Mayonnaise.name}}",
+          "Description": "{{i18n:Slime_Mayonnaise.description}}",
+          "IsDrink": true,
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 2400,
+          "Texture": "Mods\\{{ModId}}\\Slime_Base",
+          "SpriteIndex": "0",
+          "Edibility": 5,
+          "ContextTags": [
+            "color_green",
+            "mayo_item"
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Blue_Slime_Mayonnaise": {
+          "Name": "LunaSPC Blue Slime Mayonnaise",
+          "DisplayName": "{{i18n:Blue_Slime_Mayonnaise.name}}",
+          "Description": "{{i18n:Slime_Mayonnaise.description}}",
+          "IsDrink": true,
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 4080,
+          "Texture": "Mods\\{{ModId}}\\Slime_Base",
+          "SpriteIndex": "1",
+          "Edibility": 10,
+          "ContextTags": [
+            "color_blue",
+            "mayo_item"
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Red_Slime_Mayonnaise": {
+          "Name": "LunaSPC Red Slime Mayonnaise",
+          "DisplayName": "{{i18n:Red_Slime_Mayonnaise.name}}",
+          "Description": "{{i18n:Slime_Mayonnaise.description}}",
+          "IsDrink": true,
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 6000,
+          "Texture": "Mods\\{{ModId}}\\Slime_Base",
+          "SpriteIndex": "2",
+          "Edibility": 15,
+          "ContextTags": [
+            "color_red",
+            "mayo_item"
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Purple_Slime_Mayonnaise": {
+          "Name": "LunaSPC Purple Slime Mayonnaise",
+          "DisplayName": "{{i18n:Purple_Slime_Mayonnaise.name}}",
+          "Description": "{{i18n:Slime_Mayonnaise.description}}",
+          "IsDrink": true,
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 12000,
+          "Texture": "Mods\\{{ModId}}\\Slime_Base",
+          "SpriteIndex": "3",
+          "Edibility": 20,
+          "ContextTags": [
+            "color_purple",
+            "mayo_item"
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Tiger_Slime_Mayonnaise": {
+          "Name": "LunaSPC Tiger Slime Mayonnaise",
+          "DisplayName": "{{i18n:Tiger_Slime_Mayonnaise.name}}",
+          "Description": "{{i18n:Slime_Mayonnaise.description}}",
+          "IsDrink": true,
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 19200,
+          "Texture": "Mods\\{{ModId}}\\Slime_Base",
+          "SpriteIndex": "4",
+          "Edibility": 25,
+          "ContextTags": [
+            "mayo_item"
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Slime_Oil": {
+          "Name": "LunaSPC Slime Oil",
+          "DisplayName": "{{i18n:Slime_Oil.name}}",
+          "Description": "{{i18n:Slime_Oil.description}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 500,
+          "Texture": "Mods\\{{ModId}}\\Slime_Base",
+          "SpriteIndex": "5",
+          "ContextTags": [
+            "slime_oil_item"
+          ],
+          "CustomFields": {
+            "selph.ExtraMachineConfig.SlingshotDamage": 5
+          }
+        },
+        "{{ModId}}_Slime_Gelatin": {
+          "Name": "LunaSPC Slime Gelatin",
+          "DisplayName": "{{i18n:Slime_Gelatin.name}}",
+          "Description": "{{i18n:Slime_Gelatin.description}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 15,
+          "Texture": "Mods\\{{ModId}}\\Slime_Jelly",
+          "SpriteIndex": "0",
+          "Edibility": 1,
+          "ContextTags": [
+            "slime_gelatin_item"
+          ],
+          "CustomFields": {
+            "selph.ExtraMachineConfig.SlingshotDamage": 5
+          }
+        },
+        "{{ModId}}_Slime_Pudding": {
+          "Name": "LunaSPC Slime Pudding",
+          "DisplayName": "{{i18n:Slime_Pudding.name}}",
+          "Description": "{{i18n:Slime_Pudding.description}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 300,
+          "Texture": "Mods\\{{ModId}}\\Slime_Jelly",
+          "SpriteIndex": 1,
+          "ColorOverlayFromNextIndex": true,
+          "Edibility": 25,
+          "IsDrink": false,
+          "ExcludeFromRandomSale": true,
+          "ContextTags": [
+            "color_pink",
+            "slime_pudding_item",
+            "use_reverse.name_for_sorting",
+            "food_sweet"
+          ],
+          "CustomFields": null
+        },
+        "{{ModId}}_Pudding_Sweet_Tangy": {
+          "Name": "LunaSPC Sweet Tangy Jelly",
+          "DisplayName": "{{i18n:Pudding_Sweet_Tangy.name}}",
+          "Description": "{{i18n:Pudding_Sweet_Tangy.description}}",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 300,
+          "Texture": "Mods\\{{ModId}}\\Slime_Jelly",
+          "SpriteIndex": 3,
+          "Edibility": 35,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "LunaSPC Slime Pudding",
+              "BuffId": "{{ModId}}_Slime_Jelly",
+              "Duration": 400,
+              "CustomAttributes": {
+                "ForagingLevel": 1.0,
+                "LuckLevel": 2.0
+              }
+            }
+          ],
+          "ExcludeFromRandomSale": true,
+          "ContextTags": [
+            "color_red",
+            "slime_pudding_item",
+            "food_sweet",
+            "slime_pudding_berry"
+          ]
+        },
+        "{{ModId}}_Pudding_Black_Berry": {
+          "Name": "LunaSPC Black Berry Jelly",
+          "DisplayName": "{{i18n:Pudding_Black_Berry.name}}",
+          "Description": "{{i18n:Pudding_Black_Berry.description}}",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 450,
+          "Texture": "Mods\\{{ModId}}\\Slime_Jelly",
+          "SpriteIndex": 4,
+          "Edibility": 35,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "LunaSPC Slime Pudding",
+              "BuffId": "{{ModId}}_Slime_Jelly",
+              "Duration": 400,
+              "CustomAttributes": {
+                "ForagingLevel": 1.0,
+                "LuckLevel": 2.0
+              }
+            }
+          ],
+          "ExcludeFromRandomSale": true,
+          "ContextTags": [
+            "color_dark_blue",
+            "slime_pudding_item",
+            "food_sweet",
+            "slime_pudding_berry"
+          ]
+        },
+        "{{ModId}}_Pudding_Creme_Brulee": {
+          "Name": "LunaSPC Creme Brulee Pudding",
+          "DisplayName": "{{i18n:Pudding_Creme_Brulee.name}}",
+          "Description": "{{i18n:Pudding_Creme_Brulee.description}}",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 600,
+          "Texture": "Mods\\{{ModId}}\\Slime_Jelly",
+          "SpriteIndex": 5,
+          "Edibility": 45,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "LunaSPC Slime Pudding",
+              "BuffId": "{{ModId}}_Slime_Jelly",
+              "Duration": 500,
+              "CustomAttributes": {
+                "Defense": 4.0
+              }
+            }
+          ],
+          "ExcludeFromRandomSale": true,
+          "ContextTags": [
+            "color_yellow",
+            "slime_pudding_item",
+            "food_sweet",
+            "slime_pudding_brulee"
+          ]
+        },
+        "{{ModId}}_Pudding_Spring_Sakura": {
+          "Name": "LunaSPC Spring Sakura Pudding",
+          "DisplayName": "{{i18n:Pudding_Spring_Sakura.name}}",
+          "Description": "{{i18n:Pudding_Spring_Sakura.description}}",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 950,
+          "Texture": "Mods\\{{ModId}}\\Slime_Jelly",
+          "SpriteIndex": 6,
+          "Edibility": 45,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "LunaSPC Slime Pudding",
+              "BuffId": "{{ModId}}_Slime_Jelly",
+              "Duration": 500,
+              "CustomAttributes": {
+                "ForagingLevel": 4.0
+              }
+            }
+          ],
+          "ExcludeFromRandomSale": true,
+          "ContextTags": [
+            "color_pink",
+            "slime_pudding_item",
+            "food_sweet",
+            "slime_pudding_sakura"
+          ]
+        },
+        "{{ModId}}_Pudding_Moonlight_Jelly": {
+          "Name": "LunaSPC Moonlight Jelly Pudding",
+          "DisplayName": "{{i18n:Pudding_Moonlight_Jelly.name}}",
+          "Description": "{{i18n:Pudding_Moonlight_Jelly.description}}",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 950,
+          "Texture": "Mods\\{{ModId}}\\Slime_Jelly",
+          "SpriteIndex": 7,
+          "Edibility": 45,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "LunaSPC Slime Pudding",
+              "BuffId": "{{ModId}}_Slime_Jelly",
+              "Duration": 500,
+              "CustomAttributes": {
+                "FishingLevel": 4.0
+              }
+            }
+          ],
+          "ExcludeFromRandomSale": true,
+          "ContextTags": [
+            "color_purple",
+            "slime_pudding_item",
+            "food_sweet",
+            "slime_pudding_moonlight"
+          ]
+        },
+        "{{ModId}}_Pudding_Matcha_Mood": {
+          "Name": "LunaSPC Matcha Mood Pudding",
+          "DisplayName": "{{i18n:Pudding_Matcha_Mood.name}}",
+          "Description": "{{i18n:Pudding_Matcha_Mood.description}}",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 950,
+          "Texture": "Mods\\{{ModId}}\\Slime_Jelly",
+          "SpriteIndex": 8,
+          "Edibility": 45,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "LunaSPC Slime Pudding",
+              "BuffId": "{{ModId}}_Slime_Jelly",
+              "Duration": 500,
+              "CustomAttributes": {
+                "FarmingLevel": 4.0
+              }
+            }
+          ],
+          "ExcludeFromRandomSale": true,
+          "ContextTags": [
+            "color_green",
+            "slime_pudding_item",
+            "food_sweet",
+            "slime_pudding_greentea"
+          ]
+        },
+        "{{ModId}}_Pudding_Tropical_Style": {
+          "Name": "LunaSPC Tropical Style Pudding",
+          "DisplayName": "{{i18n:Pudding_Tropical_Style.name}}",
+          "Description": "{{i18n:Pudding_Tropical_Style.description}}",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 950,
+          "Texture": "Mods\\{{ModId}}\\Slime_Jelly",
+          "SpriteIndex": 9,
+          "Edibility": 45,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "LunaSPC Slime Pudding",
+              "BuffId": "{{ModId}}_Slime_Jelly",
+              "Duration": 500,
+              "CustomAttributes": {
+                "Attack": 4.0
+              }
+            }
+          ],
+          "ExcludeFromRandomSale": true,
+          "ContextTags": [
+            "color_yellow",
+            "slime_pudding_item",
+            "food_sweet",
+            "slime_pudding_island"
+          ]
+        },
+        "{{ModId}}_Pudding_Ginger_Milk": {
+          "Name": "LunaSPC Ginger Milk Pudding",
+          "DisplayName": "{{i18n:Pudding_Ginger_Milk.name}}",
+          "Description": "{{i18n:Pudding_Ginger_Milk.description}}",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 950,
+          "Texture": "Mods\\{{ModId}}\\Slime_Jelly",
+          "SpriteIndex": 10,
+          "Edibility": 45,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "LunaSPC Slime Pudding",
+              "BuffId": "{{ModId}}_Slime_Jelly",
+              "Duration": 500,
+              "CustomAttributes": {
+                "LuckLevel": 4.0
+              }
+            }
+          ],
+          "ExcludeFromRandomSale": true,
+          "ContextTags": [
+            "color_yellow",
+            "slime_pudding_item",
+            "ginger_item",
+            "food_sweet",
+            "slime_pudding_ginger"
+          ]
+        },
+        "{{ModId}}_Pudding_Dwarf_Cuisine": {
+          "Name": "LunaSPC Dwarf Cuisine Pudding",
+          "DisplayName": "{{i18n:Pudding_Dwarf_Cuisine.name}}",
+          "Description": "{{i18n:Pudding_Dwarf_Cuisine.description}}",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 950,
+          "Texture": "Mods\\{{ModId}}\\Slime_Jelly",
+          "SpriteIndex": 11,
+          "Edibility": 45,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "LunaSPC Slime Pudding",
+              "BuffId": "{{ModId}}_Slime_Jelly",
+              "Duration": 500,
+              "CustomAttributes": {
+                "MiningLevel": 4.0
+              }
+            }
+          ],
+          "ExcludeFromRandomSale": true,
+          "ContextTags": [
+            "color_brown",
+            "slime_pudding_item",
+            "food_sweet",
+            "slime_pudding_cave"
+          ]
+        },
+        "{{ModId}}_Pudding_Courage_Purplethorn": {
+          "Name": "LunaSPC Courage Purplethorn Pudding",
+          "DisplayName": "{{i18n:Pudding_Courage_Purplethorn.name}}",
+          "Description": "{{i18n:Pudding_Courage_Purplethorn.description}}",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 950,
+          "Texture": "Mods\\{{ModId}}\\Slime_Jelly",
+          "SpriteIndex": 12,
+          "Edibility": 45,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "LunaSPC Slime Pudding",
+              "BuffId": "{{ModId}}_Slime_Jelly",
+              "Duration": 500,
+              "CustomAttributes": {
+                "Immunity": 4.0
+              }
+            }
+          ],
+          "ExcludeFromRandomSale": true,
+          "ContextTags": [
+            "color_purple",
+            "slime_pudding_item",
+            "food_sweet",
+            "slime_pudding_abby"
+          ]
+        },
+        "{{ModId}}_Pudding_Blue_Cyclone": {
+          "Name": "LunaSPC Blue Cyclone Pudding",
+          "DisplayName": "{{i18n:Pudding_Blue_Cyclone.name}}",
+          "Description": "{{i18n:Pudding_Blue_Cyclone.description}}",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 950,
+          "Texture": "Mods\\{{ModId}}\\Slime_Jelly",
+          "SpriteIndex": 13,
+          "Edibility": 45,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "LunaSPC Slime Pudding",
+              "BuffId": "{{ModId}}_Slime_Jelly",
+              "Duration": 500,
+              "CustomAttributes": {
+                "Speed": 4.0
+              }
+            }
+          ],
+          "ExcludeFromRandomSale": true,
+          "ContextTags": [
+            "color_blue",
+            "slime_pudding_item",
+            "food_sweet",
+            "slime_pudding_joja"
+          ]
+        },
+        "{{ModId}}_Pudding_Void_Spirit": {
+          "Name": "LunaSPC Void Spirit Pudding",
+          "DisplayName": "{{i18n:Pudding_Void_Spirit.name}}",
+          "Description": "{{i18n:Pudding_Void_Spirit.description}}",
+          "Type": "Basic",
+          "Category": -7,
+          "Price": 950,
+          "Texture": "Mods\\{{ModId}}\\Slime_Jelly",
+          "SpriteIndex": 14,
+          "Edibility": 45,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "LunaSPC Void Spirit Pudding",
+              "BuffId": "24",
+              "Duration": -2
+            }
+          ],
+          "ExcludeFromRandomSale": true,
+          "ContextTags": [
+            "color_black",
+            "slime_pudding_item",
+            "food_sweet",
+            "slime_pudding_shadow"
+          ]
+        }
+      }
+    }
+  ]
+}
