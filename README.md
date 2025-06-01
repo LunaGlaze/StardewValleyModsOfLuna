@@ -10,6 +10,7 @@
 - [33390](https://www.nexusmods.com/stardewvalley/mods/33390) Poultry House Product Price Adjustment | 禽舍产物价格调整
 - [33557](https://www.nexusmods.com/stardewvalley/mods/33557) Better NPC Shop by Luna | 更好的NPC商店
 - [33754](https://www.nexusmods.com/stardewvalley/mods/33754) Better Sweet Gem Berry Bush | 更好的宝石甜莓灌木
+- [34434](https://www.nexusmods.com/stardewvalley/mods/34434) Slime Pudding Craft of Luna | 史莱姆布丁工艺
 
 ## License Summary
 
