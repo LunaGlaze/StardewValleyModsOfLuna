@@ -26,6 +26,13 @@
                     "Modification": "Multiply",
                     "Amount": "{{Price_Multiplier_3rd}}",
                     "RandomAmount": null
+                },
+                "{{ModId}}_Pierre_PriceModifierMode_SeedDefault": {
+                    "Id": "{{ModId}}_Pierre_PriceModifierMode_heart_highest",
+                    "Condition": "ITEM_CATEGORY Target -74, !ITEM_CONTEXT_TAG tree_seed_item",
+                    "Modification": "Multiply",
+                    "Amount": 0.5,
+                    "RandomAmount": null
                 }
             },
             "When": {
@@ -122,399 +129,102 @@
             "TargetField": ["SeedShop", "Items"],
             "Fields": {
                 "(O)472": {
-                    "PriceModifiers": [
-                        {
-                          "Id": "{{ModId}}_DefaultMarkup",
-                          "Condition": null,
-                          "Modification": "Multiply",
-                          "Amount": 0.5,
-                          "RandomAmount": null
-                        }
-                    ],
                     "IgnoreShopPriceModifiers": false
                 },
                 "(O)473": {
-                    "PriceModifiers": [
-                        {
-                          "Id": "{{ModId}}_DefaultMarkup",
-                          "Condition": null,
-                          "Modification": "Multiply",
-                          "Amount": 0.5,
-                          "RandomAmount": null
-                        }
-                    ],
                     "IgnoreShopPriceModifiers": false
                 },
                 "(O)474": {
-                    "PriceModifiers": [
-                        {
-                          "Id": "{{ModId}}_DefaultMarkup",
-                          "Condition": null,
-                          "Modification": "Multiply",
-                          "Amount": 0.5,
-                          "RandomAmount": null
-                        }
-                    ],
                     "IgnoreShopPriceModifiers": false
                 },
                 "(O)475": {
-                    "PriceModifiers": [
-                        {
-                          "Id": "{{ModId}}_DefaultMarkup",
-                          "Condition": null,
-                          "Modification": "Multiply",
-                          "Amount": 0.5,
-                          "RandomAmount": null
-                        }
-                    ],
                     "IgnoreShopPriceModifiers": false
                 },
                 "(O)427": {
-                    "PriceModifiers": [
-                        {
-                          "Id": "{{ModId}}_DefaultMarkup",
-                          "Condition": null,
-                          "Modification": "Multiply",
-                          "Amount": 0.5,
-                          "RandomAmount": null
-                        }
-                    ],
                     "IgnoreShopPriceModifiers": false
                 },
                 "(O)477": {
-                    "PriceModifiers": [
-                        {
-                          "Id": "{{ModId}}_DefaultMarkup",
-                          "Condition": null,
-                          "Modification": "Multiply",
-                          "Amount": 0.5,
-                          "RandomAmount": null
-                        }
-                    ],
                     "IgnoreShopPriceModifiers": false
                 },
                 "(O)429": {
-                    "PriceModifiers": [
-                        {
-                          "Id": "{{ModId}}_DefaultMarkup",
-                          "Condition": null,
-                          "Modification": "Multiply",
-                          "Amount": 0.5,
-                          "RandomAmount": null
-                        }
-                    ],
                     "IgnoreShopPriceModifiers": false
                 },
                 "(O)476": {
-                    "PriceModifiers": [
-                        {
-                          "Id": "{{ModId}}_DefaultMarkup",
-                          "Condition": null,
-                          "Modification": "Multiply",
-                          "Amount": 0.5,
-                          "RandomAmount": null
-                        }
-                    ],
                     "IgnoreShopPriceModifiers": false
                 },
                 "(O)273": {
-                    "PriceModifiers": [
-                        {
-                          "Id": "{{ModId}}_DefaultMarkup",
-                          "Condition": null,
-                          "Modification": "Multiply",
-                          "Amount": 0.5,
-                          "RandomAmount": null
-                        }
-                    ],
                     "IgnoreShopPriceModifiers": false
                 },
                 "(O)479": {
-                    "PriceModifiers": [
-                        {
-                          "Id": "{{ModId}}_DefaultMarkup",
-                          "Condition": null,
-                          "Modification": "Multiply",
-                          "Amount": 0.5,
-                          "RandomAmount": null
-                        }
-                    ],
                     "IgnoreShopPriceModifiers": false
                 },
                 "(O)480": {
-                    "PriceModifiers": [
-                        {
-                          "Id": "{{ModId}}_DefaultMarkup",
-                          "Condition": null,
-                          "Modification": "Multiply",
-                          "Amount": 0.5,
-                          "RandomAmount": null
-                        }
-                    ],
                     "IgnoreShopPriceModifiers": false
                 },
                 "(O)481": {
-                    "PriceModifiers": [
-                        {
-                          "Id": "{{ModId}}_DefaultMarkup",
-                          "Condition": null,
-                          "Modification": "Multiply",
-                          "Amount": 0.5,
-                          "RandomAmount": null
-                        }
-                    ],
                     "IgnoreShopPriceModifiers": false
                 },
                 "(O)482": {
-                    "PriceModifiers": [
-                        {
-                          "Id": "{{ModId}}_DefaultMarkup",
-                          "Condition": null,
-                          "Modification": "Multiply",
-                          "Amount": 0.5,
-                          "RandomAmount": null
-                        }
-                    ],
                     "IgnoreShopPriceModifiers": false
                 },
                 "WheatSeeds_Summer": {
-                    "PriceModifiers": [
-                        {
-                          "Id": "{{ModId}}_DefaultMarkup",
-                          "Condition": null,
-                          "Modification": "Multiply",
-                          "Amount": 0.5,
-                          "RandomAmount": null
-                        }
-                    ],
                     "IgnoreShopPriceModifiers": false
                 },
                 "(O)484": {
-                    "PriceModifiers": [
-                        {
-                          "Id": "{{ModId}}_DefaultMarkup",
-                          "Condition": null,
-                          "Modification": "Multiply",
-                          "Amount": 0.5,
-                          "RandomAmount": null
-                        }
-                    ],
                     "IgnoreShopPriceModifiers": false
                 },
                 "(O)453": {
-                    "PriceModifiers": [
-                        {
-                          "Id": "{{ModId}}_DefaultMarkup",
-                          "Condition": null,
-                          "Modification": "Multiply",
-                          "Amount": 0.5,
-                          "RandomAmount": null
-                        }
-                    ],
                     "IgnoreShopPriceModifiers": false
                 },
                 "(O)455": {
-                    "PriceModifiers": [
-                        {
-                          "Id": "{{ModId}}_DefaultMarkup",
-                          "Condition": null,
-                          "Modification": "Multiply",
-                          "Amount": 0.5,
-                          "RandomAmount": null
-                        }
-                    ],
                     "IgnoreShopPriceModifiers": false
                 },
                 "(O)302": {
-                    "PriceModifiers": [
-                        {
-                          "Id": "{{ModId}}_DefaultMarkup",
-                          "Condition": null,
-                          "Modification": "Multiply",
-                          "Amount": 0.5,
-                          "RandomAmount": null
-                        }
-                    ],
                     "IgnoreShopPriceModifiers": false
                 },
                 "CornSeeds_Summer": {
-                    "PriceModifiers": [
-                        {
-                          "Id": "{{ModId}}_DefaultMarkup",
-                          "Condition": null,
-                          "Modification": "Multiply",
-                          "Amount": 0.5,
-                          "RandomAmount": null
-                        }
-                    ],
                     "IgnoreShopPriceModifiers": false
                 },
                 "SunflowerSeeds_Summer": {
-                    "PriceModifiers": [
-                        {
-                          "Id": "{{ModId}}_DefaultMarkup",
-                          "Condition": null,
-                          "Modification": "Multiply",
-                          "Amount": 0.5,
-                          "RandomAmount": null
-                        }
-                    ],
                     "IgnoreShopPriceModifiers": false
                 },
                 "(O)485": {
-                    "PriceModifiers": [
-                        {
-                          "Id": "{{ModId}}_DefaultMarkup",
-                          "Condition": null,
-                          "Modification": "Multiply",
-                          "Amount": 0.5,
-                          "RandomAmount": null
-                        }
-                    ],
                     "IgnoreShopPriceModifiers": false
                 },
                 "(O)490": {
-                    "PriceModifiers": [
-                        {
-                          "Id": "{{ModId}}_DefaultMarkup",
-                          "Condition": null,
-                          "Modification": "Multiply",
-                          "Amount": 0.5,
-                          "RandomAmount": null
-                        }
-                    ],
                     "IgnoreShopPriceModifiers": false
                 },
                 "CornSeeds_Fall": {
-                    "PriceModifiers": [
-                        {
-                          "Id": "{{ModId}}_DefaultMarkup",
-                          "Condition": null,
-                          "Modification": "Multiply",
-                          "Amount": 0.5,
-                          "RandomAmount": null
-                        }
-                    ],
                     "IgnoreShopPriceModifiers": false
                 },
                 "(O)488": {
-                    "PriceModifiers": [
-                        {
-                          "Id": "{{ModId}}_DefaultMarkup",
-                          "Condition": null,
-                          "Modification": "Multiply",
-                          "Amount": 0.5,
-                          "RandomAmount": null
-                        }
-                    ],
                     "IgnoreShopPriceModifiers": false
                 },
                 "(O)491": {
-                    "PriceModifiers": [
-                        {
-                          "Id": "{{ModId}}_DefaultMarkup",
-                          "Condition": null,
-                          "Modification": "Multiply",
-                          "Amount": 0.5,
-                          "RandomAmount": null
-                        }
-                    ],
                     "IgnoreShopPriceModifiers": false
                 },
                 "(O)492": {
-                    "PriceModifiers": [
-                        {
-                          "Id": "{{ModId}}_DefaultMarkup",
-                          "Condition": null,
-                          "Modification": "Multiply",
-                          "Amount": 0.5,
-                          "RandomAmount": null
-                        }
-                    ],
                     "IgnoreShopPriceModifiers": false
                 },
                 "(O)493": {
-                    "PriceModifiers": [
-                        {
-                          "Id": "{{ModId}}_DefaultMarkup",
-                          "Condition": null,
-                          "Modification": "Multiply",
-                          "Amount": 0.5,
-                          "RandomAmount": null
-                        }
-                    ],
                     "IgnoreShopPriceModifiers": false
                 },
                 "WheatSeeds_Fall": {
-                    "PriceModifiers": [
-                        {
-                          "Id": "{{ModId}}_DefaultMarkup",
-                          "Condition": null,
-                          "Modification": "Multiply",
-                          "Amount": 0.5,
-                          "RandomAmount": null
-                        }
-                    ],
                     "IgnoreShopPriceModifiers": false
                 },
                 "SunflowerSeeds_Fall": {
-                    "PriceModifiers": [
-                        {
-                          "Id": "{{ModId}}_DefaultMarkup",
-                          "Condition": null,
-                          "Modification": "Multiply",
-                          "Amount": 0.5,
-                          "RandomAmount": null
-                        }
-                    ],
                     "IgnoreShopPriceModifiers": false
                 },
                 "(O)425": {
-                    "PriceModifiers": [
-                        {
-                          "Id": "{{ModId}}_DefaultMarkup",
-                          "Condition": null,
-                          "Modification": "Multiply",
-                          "Amount": 0.5,
-                          "RandomAmount": null
-                        }
-                    ],
                     "IgnoreShopPriceModifiers": false
                 },
                 "(O)299": {
-                    "PriceModifiers": [
-                        {
-                          "Id": "{{ModId}}_DefaultMarkup",
-                          "Condition": null,
-                          "Modification": "Multiply",
-                          "Amount": 0.5,
-                          "RandomAmount": null
-                        }
-                    ],
                     "IgnoreShopPriceModifiers": false
                 },
                 "(O)301": {
-                    "PriceModifiers": [
-                        {
-                          "Id": "{{ModId}}_DefaultMarkup",
-                          "Condition": null,
-                          "Modification": "Multiply",
-                          "Amount": 0.5,
-                          "RandomAmount": null
-                        }
-                    ],
                     "IgnoreShopPriceModifiers": false
                 },
                 "(O)489": {
-                    "PriceModifiers": [
-                        {
-                          "Id": "{{ModId}}_DefaultMarkup",
-                          "Condition": null,
-                          "Modification": "Multiply",
-                          "Amount": 0.5,
-                          "RandomAmount": null
-                        }
-                    ],
                     "IgnoreShopPriceModifiers": false
                 }
             },
@@ -532,7 +242,7 @@
                 "{{ModId}}_MixedSeeds": {
                     "Id": "{{ModId}}_MixedSeeds",
                     "ItemId": "(O)770",
-                    "Price": 50,
+                    "Price": 100,
                     "IgnoreShopPriceModifiers": false,
                     "AvailableStock": 50
                 },
@@ -566,15 +276,6 @@
                 "{{ModId}}_SpringSeeds": {
                     "Id": "{{ModId}}_SpringSeeds",
                     "ItemId": "(0)495",
-                    "PriceModifiers": [
-                        {
-                          "Id": "{{ModId}}_DefaultMarkup",
-                          "Condition": null,
-                          "Modification": "Multiply",
-                          "Amount": 0.5,
-                          "RandomAmount": null
-                        }
-                    ],
                     "AvailableStock": "10",
                     "IgnoreShopPriceModifiers": false,
                     "Condition": "SEASON Spring"
@@ -582,15 +283,6 @@
                 "{{ModId}}_SummerSeeds": {
                     "Id": "{{ModId}}_SummerSeeds",
                     "ItemId": "(0)496",
-                    "PriceModifiers": [
-                        {
-                          "Id": "{{ModId}}_DefaultMarkup",
-                          "Condition": null,
-                          "Modification": "Multiply",
-                          "Amount": 0.5,
-                          "RandomAmount": null
-                        }
-                    ],
                     "AvailableStock": "10",
                     "IgnoreShopPriceModifiers": false,
                     "Condition": "SEASON Summer"
@@ -598,15 +290,6 @@
                 "{{ModId}}_FallSeeds": {
                     "Id": "{{ModId}}_FallSeeds",
                     "ItemId": "(0)497",
-                    "PriceModifiers": [
-                        {
-                          "Id": "{{ModId}}_DefaultMarkup",
-                          "Condition": null,
-                          "Modification": "Multiply",
-                          "Amount": 0.5,
-                          "RandomAmount": null
-                        }
-                    ],
                     "AvailableStock": "10",
                     "IgnoreShopPriceModifiers": false,
                     "Condition": "SEASON Fall"
@@ -614,15 +297,6 @@
                 "{{ModId}}_WinterSeeds": {
                     "Id": "{{ModId}}_WinterSeeds",
                     "ItemId": "(0)498",
-                    "PriceModifiers": [
-                        {
-                          "Id": "{{ModId}}_DefaultMarkup",
-                          "Condition": null,
-                          "Modification": "Multiply",
-                          "Amount": 0.5,
-                          "RandomAmount": null
-                        }
-                    ],
                     "AvailableStock": "10",
                     "IgnoreShopPriceModifiers": false,
                     "Condition": "SEASON Winter"
@@ -705,7 +379,7 @@
                           "Id": "{{ModId}}_DefaultMarkup",
                           "Condition": null,
                           "Modification": "Multiply",
-                          "Amount": 25,
+                          "Amount": 50,
                           "RandomAmount": null
                         }
                     ],
@@ -732,7 +406,7 @@
                           "Id": "{{ModId}}_DefaultMarkup",
                           "Condition": null,
                           "Modification": "Multiply",
-                          "Amount": 2,
+                          "Amount": 4,
                           "RandomAmount": null
                         }
                     ],
