@@ -29,7 +29,7 @@
                 },
                 "{{ModId}}_Pierre_PriceModifierMode_SeedDefault": {
                     "Id": "{{ModId}}_Pierre_PriceModifierMode_heart_highest",
-                    "Condition": "ITEM_CATEGORY Target -74, !ITEM_CONTEXT_TAG tree_seed_item",
+                    "Condition": "ITEM_CATEGORY Target -74, !ITEM_CONTEXT_TAG Target tree_seed_item",
                     "Modification": "Multiply",
                     "Amount": 0.5,
                     "RandomAmount": null
